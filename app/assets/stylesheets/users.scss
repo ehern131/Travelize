@@ -1,3 +1,132 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.mycontainer {
+  min-width: 960px;
+  background-color: #020204;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+
+/*-webkit---------------------HEADER: ;*/
+/*-moz---------------------HEADER: ;*/
+/*-ms---------------------HEADER: ;*/
+/*-o---------------------HEADER: ;*/
+/*--------------------HEADER: ;*/
+
+.headerRow {
+  background-color: #black;
+  height: 35px;
+}
+
+
+.headerRow .words {
+  width: 150px;
+  height: 100%;
+  float: right;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.headerRow .words a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a5a5a6;
+  font-size: 11px;
+  line-height: 35px;
+  &:hover {
+    background-color: #1F618D;
+  }
+}
+
+
+
+
+.navTop {
+  height: 70px;
+  background-color: #black;
+}
+
+.navTop .words2 {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  border-top: solid .05px rgba(135,135,135,0.3);
+  border-bottom:  solid .05px rgba(135,135,135,0.1);
+}
+
+.navTop .words2 a {
+  color: #a5a5a6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 70px;
+  padding: 0 45px 0 45px;
+  &:hover {
+  background-color: #1F618D;
+  }
+}
+
+#logo {
+  float: left;
+  background-image: url('Travelize_Logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: -5px;
+  position: relative;
+  margin-left: -420;
+}
+
+
+/*-webkit-------------------------MAIN: ;*/
+/*-moz-------------------------MAIN: ;*/
+/*-ms-------------------------MAIN: ;*/
+/*-o-------------------------MAIN: ;*/
+/*------------------------MAIN: ;*/
+
+.main {
+  height: 671px;
+  background-color: #123;
+  max-height: 671px;
+  background-image: url('background2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.hover {
+    background-color: #c1c1c1;
+    opacity: 30%;
+
+}
+
+
+
+
+
+
+
+
+
+@font-face{
+  font-family:'Brandon Grotesque';
+  src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
+  font-weight:normal;font-style:normal
+}
+
+@font-face{
+  font-family:'Brandon Grotesque Bold';
+  src:url("./assets/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
+  font-weight:bold;font-style:normal
+}

@@ -1,6 +1,6 @@
 class TripsController < ApplicationController
   before_action :set_trip, only: [:show, :edit, :update, :destroy]
-
+  before_filter :authorize
   # GET /trips
   # GET /trips.json
   def index
