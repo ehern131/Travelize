@@ -73,7 +73,7 @@ h1 {
   line-height: 70px;
   padding: 0 45px 0 45px;
   &:hover {
-  background-color: rgba(33,51,159,1);
+    background-color: rgba(33,51,159,1);
   }
 }
 
@@ -105,10 +105,45 @@ h1 {
   color: #fff;
 }
 
+.main2 {
+  height:671px;
+  max-height: 671px;
+}
+
+.userInfo {
+  height: 600px;
+  background-color: #543;
+  max-height: 600px;
+  color: #black;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  .userImage {
+    background-color: lightblue;
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    min-width: 200px;
+    margin: 20px 0 0 20px;
+  }
+}
+
+
+
+.userTrip {
+  height: 600px;
+  background-color: #674;
+  max-height: 600px;
+  color: black;
+  width: 50%;
+  display: inline-block;
+  float: right;
+}
+
 
 .hover {
-    background-color: #c1c1c1;
-    opacity: 30%;
+  background-color: #c1c1c1;
+  opacity: 30%;
 
 }
 
@@ -128,6 +163,7 @@ h1 {
 .class {
   display: inline;
 }
+
 
 
 

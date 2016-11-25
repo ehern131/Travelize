@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Travelize</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- <script src="effects.js"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"
   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
@@ -41,20 +42,20 @@
     <div class="main">
       <div class="table-striped">
         <div class="search">
-        <%= form_tag("/list_venues", method: "post") do %>
+          <%= form_tag("/list_venues", method: "post") do %>
           <p>Where do you want to go?</p>
           <%= search_field_tag :location, '', id: 'location' %>
           <p>What are you interested in?</p>
           <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
           <%= submit_tag("Search", :class => 'search_btn') %>
-        <% end %>
-      </div>
+          <% end %>
+        </div>
       </div>
     </div>
 
 
 
-  </div>
-  <script src="effects.js"></script>
-</body>
-</html>
+
+    </div>
+  </body>
+  </html>
