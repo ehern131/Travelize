@@ -7,6 +7,19 @@ class VenuesController < ApplicationController
     @venues = Venue.all
   end
 
+  def get_venues
+    terms = {
+      term: params[:interest].nil? ? "restaurants" : params[:interest]
+    }
+    if params[:location].blank?
+      return
+    else
+      @response = Yelp.client.search(params[:location], terms )
+    end
+
+    render layout: true
+  end
+
   # GET /venues/1
   # GET /venues/1.json
   def show

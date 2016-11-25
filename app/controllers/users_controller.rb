@@ -7,10 +7,8 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+
   def welcome
-    if params[:term]
-      @businesses = YelpApi.search(params[:term], 'restaurants')
-    end
   end
 
 

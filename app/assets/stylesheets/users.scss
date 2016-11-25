@@ -43,7 +43,7 @@ h1 {
   font-size: 11px;
   line-height: 35px;
   &:hover {
-    background-color: #1F618D;
+    background-color: rgba(33,51,159);
   }
 }
 
@@ -73,7 +73,7 @@ h1 {
   line-height: 70px;
   padding: 0 45px 0 45px;
   &:hover {
-  background-color: #1F618D;
+  background-color: rgba(33,51,159);
   }
 }
 
@@ -102,6 +102,7 @@ h1 {
   background-image: url('background2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 
@@ -111,10 +112,22 @@ h1 {
 
 }
 
+.search{
+  color: #686868;
+  display: inline;
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
 
+}
 
+.search p {
+  display: inline;
+}
 
-
+.class {
+  display: inline;
+}
 
 
 

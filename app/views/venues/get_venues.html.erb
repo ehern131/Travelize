@@ -1,0 +1,23 @@
+<div class="table-striped">
+  <div class="search">
+    <%= form_tag("/list_venues", method: "post") do %>
+    <p>Where do you want to go?</p>
+    <%= search_field_tag :location, '', id: 'location' %>
+    <p>What are you interested in?</p>
+    <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
+    <%= submit_tag("Search", :class => 'search_btn') %>
+    <% end %>
+  </div>
+</div>
+<% unless @response.blank? %>
+<% @response.businesses.each do |bus| %>
+<ul class="">
+  <li><%= bus.name %></li>
+  <li><%= bus.rating %></li>
+  <li><%= bus.display_phone %></li>
+  <li><%= image_tag bus.image_url %></li>
+  <li><%= simple_format bus.location.display_address.join("\n") %></li>
+  
+</ul>
+<% end %>
+<% end %>
