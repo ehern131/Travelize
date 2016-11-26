@@ -30,9 +30,9 @@
       <div class="words2">
         <!-- <div><a  id="logo"href="" src="./assets/img/Travelize_Logo.png"></a></div> -->
         <a class=".btn-5" href="">About</a>
-        <a class=".btn-5" href="">My Trips</a>
+        <a class=".btn-5" href="">Venues</a>
         <!-- <a class=".btn-5" href="">Shop</a> -->
-        <a class=".btn-5" href="">Story</a>
+        <a class=".btn-5" href="">Trips</a>
         <a class=".btn-5" href="">Contact</a>
       </div>
     </div>
@@ -43,15 +43,21 @@
 
     <div class="main">
       <div id="video-background">
-        <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true%>
+        <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true, muted: true%>
         <div class="mainSearch">
           <div class="search">
             <%= form_tag("/list_venues", method: "post") do %>
-            <p>Where do you want to go?</p>
-            <%= search_field_tag :location, '', id: 'location' %>
-            <p>What are you interested in?</p>
+            <div class="where">
+            <p id="locationTag">Where</p>
+            <%= search_field_tag :location, '', id: 'location' , placeholder: "Amsterdam"%>
+            </div>
+            <div class="what">
+            <p id="interestTag">What are you interested in?</p>
             <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
-            <%= submit_tag("Search", :class => 'search_btn') %>
+            </div>
+            <div class="mainSearchButton">
+            <%= submit_tag("Search", :class => 'searchBtn') %>
+            </div>
             <% end %>
           </div>
         </div>
