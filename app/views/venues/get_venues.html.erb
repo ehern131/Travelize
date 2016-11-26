@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <div class="mycontainer">
+  <div class="maincontainer">
 
 
     <div class="headerRow">
@@ -51,14 +51,18 @@
         <li class="bus-name"><%= bus.name %></li><br>
         <li><%= simple_format bus.location.display_address.join("\n") %></li>
         <li class="phone"><%= bus.display_phone %></li>
-      <!-- <li><p>Rating</p><%= bus.rating %></li> -->
+        <li><p>Rating</p><%= bus.rating %></li>
+
       </ul>
     <% end %>
     <% end %>
 
     </div>
-      <label class="createtrip">Create my trip</label>
+    <div class="trip-button">
+        <label class="createtrip">Create my trip</label>
+    </div>
 
+</div>
 </div>
 
 
