@@ -1,3 +1,35 @@
 // Place all the styles related to the Venues controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+li {
+ display: inline;
+ list-style-type: none;
+
+}
+
+.image img {
+ float: left;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+#venue-check {
+  float: left;
+}
+
+input[type=checkbox]{
+height:18px;
+width:18px;
+padding:0;
+
+display:block;
+float:left;
+display:inline-block;
+vertical-align:middle;
+}

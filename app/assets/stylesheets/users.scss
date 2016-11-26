@@ -96,9 +96,9 @@ h1 {
 /*------------------------MAIN: ;*/
 
 .main {
-  height: 671px;
+  height: 600px;
   background-color: #123;
-  max-height: 671px;
+  max-height: 600px;
   background-image: url('background2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -129,7 +129,6 @@ h1 {
 }
 
 
-
 .userTrip {
   height: 600px;
   background-color: #674;
@@ -147,23 +146,69 @@ h1 {
 
 }
 
-.search{
-  color: #686868;
-  display: inline;
-  width: 900px;
-  height: 300px;
-  margin: 0 auto;
 
-}
-
-.search p {
-  display: inline;
-}
 
 .class {
   display: inline;
 }
 
+.search{
+  color: #fff;
+  margin: 0 auto;
+}
+
+#interest, #location {
+  color: #000;
+}
+
+.search p {
+  display: inline;
+  margin: 10px;
+}
+
+.btn-default {
+  width: 100px;
+  margin-left: 20px;
+}
+
+.mainSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 15%;
+  position: absolute;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,.8);
+  height: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+
+.class {
+  display: inline;
+}
+
+
+#video-background {
+z-index: 1;
+
+
+//   position:relative;
+//   display: inline-block;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 70%;
+//   width: initial;
+//   height: auto;
+//   z-index: 1;
+//   margin: 0 auto;
+//   object-fit: cover;
+//   padding: 0;
+}
 
 
 

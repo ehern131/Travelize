@@ -1,14 +1,17 @@
-</div>
+<div class="results">
 <% unless @response.blank? %>
 <% @response.businesses.each do |bus| %>
 <ul class="">
-  <input type="checkbox">
-  <li><%= bus.name %></li>
-  <li><%= bus.rating %></li>
-  <li><%= bus.display_phone %></li>
-  <li><%= image_tag bus.image_url %></li>
-  <li><%= simple_format bus.location.display_address.join("\n") %></li>
 
+  <input type="checkbox">
+
+  <li class="image"><%= image_tag bus.image_url %></li>
+  <li><%= bus.name %></li>
+  <li><%= bus.display_phone %></li>
+  <li><%= simple_format bus.location.display_address.join("\n") %></li>
+  <!-- <li><p>Rating</p><%= bus.rating %></li> -->
 </ul>
 <% end %>
 <% end %>
+<p>Create my trip</p>
+</div>

@@ -39,16 +39,21 @@
 
 
 
+
+
     <div class="main">
-      <div class="table-striped">
-        <div class="search">
-          <%= form_tag("/list_venues", method: "post") do %>
-          <p>Where do you want to go?</p>
-          <%= search_field_tag :location, '', id: 'location' %>
-          <p>What are you interested in?</p>
-          <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
-          <%= submit_tag("Search", :class => 'search_btn') %>
-          <% end %>
+      <div id="video-background">
+        <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true%>
+        <div class="mainSearch">
+          <div class="search">
+            <%= form_tag("/list_venues", method: "post") do %>
+            <p>Where do you want to go?</p>
+            <%= search_field_tag :location, '', id: 'location' %>
+            <p>What are you interested in?</p>
+            <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
+            <%= submit_tag("Search", :class => 'search_btn') %>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
@@ -56,6 +61,6 @@
 
 
 
-    </div>
-  </body>
-  </html>
+  </div>
+</body>
+</html>
