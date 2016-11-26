@@ -1,4 +1,4 @@
-// Place all the styles related to the Venues controller here.
+// Place all the styles related to the Vraienues controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
@@ -22,14 +22,11 @@ height: 100%;
 
 .results {
 
-margin: 30px;
-padding: 30px;
+
+padding-top: 30px;
 width: 650px;
 margin: 0 auto;
-
-
-
-
+position: relative;
 
 }
 .bus-name {
@@ -37,6 +34,7 @@ font-size: 1.5em;
 font-weight: 200;
 position: relative;
 top: 5px;
+margin-right: 20px;
 
 }
 .venues li {
@@ -54,14 +52,18 @@ background-color: rgba(255,255,255,.9);
 color: #505151;
 width: 675px;
 margin: 0 auto;
+line-height: 1.55em;
 
 }
 
 
 .venues li:last-child {
-  position: relative;
-  top: 10px;
-  right: 20px;
+  float: right;
+  position:relative;
+  right: 55px;
+  top: -120px;
+  margin-left: 30px;
+
 }
 
 .venues:first-child {
@@ -141,5 +143,5 @@ vertical-align:middle;
   display:flex;
   justify-content:center;
   align-items:center;
-  margin: 10px 0 30px 15px;
+  margin: 30px 0 30px 15px;
 }

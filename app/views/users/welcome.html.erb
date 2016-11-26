@@ -45,21 +45,21 @@
       <div id="video-background">
         <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true, muted: true%>
         <div class="mainSearch">
-          <div class="search">
-            <%= form_tag("/list_venues", method: "post") do %>
+            <%= form_tag("/list_venues", method: "post",class: "form") do %>
             <div class="where">
             <p id="locationTag">Where</p>
-            <%= search_field_tag :location, '', id: 'location' , placeholder: "Amsterdam"%>
+            <%= search_field_tag :location, '', id: 'location' , placeholder: "Destination, city, address"%>
             </div>
             <div class="what">
-            <p id="interestTag">What are you interested in?</p>
-            <%= select_tag "interest", options_for_select([ "Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest' %>
+            <p id="interestTag">What</p>
+            <%= select_tag "interest", options_for_select(["Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest', placeholder: "Categories" %>
             </div>
-            <div class="mainSearchButton">
+            <div class="searchContainer">
+            <div class="searchBtn">
             <%= submit_tag("Search", :class => 'searchBtn') %>
-            </div>
             <% end %>
-          </div>
+            </div>
+            </div>
         </div>
       </div>
     </div>

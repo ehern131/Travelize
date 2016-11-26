@@ -51,7 +51,9 @@
         <li class="bus-name"><%= bus.name %></li><br>
         <li><%= simple_format bus.location.display_address.join("\n") %></li>
         <li class="phone"><%= bus.display_phone %></li>
-        <li><p>Rating</p><%= bus.rating %></li>
+        <li class="website"><%= link_to 'Website'%></li>
+        <!-- <li><p>Rating</p><%= bus.rating %></li> -->
+        <li><p>Rating:</p><%= image_tag bus.rating_img_url %></li>
 
       </ul>
     <% end %>
