@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Travelize</title>
+  <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,900" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -46,12 +47,12 @@
     <% unless @response.blank? %>
     <% @response.businesses.each do |bus| %>
       <ul class="venues">
-        <input type="checkbox" id="venue-check">
+        <li><input type="checkbox" id="venue-check"></li>
         <li class="image"><%= image_tag bus.image_url %></li>
-        <li class="bus-name"><%= bus.name %></li><br>
-        <li><%= simple_format bus.location.display_address.join("\n") %></li>
-        <li class="phone"><%= bus.display_phone %></li>
-        <li class="website"><%= link_to 'Website'%></li>
+        <li><span class="bus-name"><%= bus.name %></span><br>
+        <p><%= simple_format bus.location.display_address.join("\n") %>
+        <%= bus.display_phone %><br>
+        <%= link_to 'Website'%></p></li>
         <!-- <li><p>Rating</p><%= bus.rating %></li> -->
         <li><p>Rating:</p><%= image_tag bus.rating_img_url %></li>
 
