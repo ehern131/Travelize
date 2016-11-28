@@ -2,8 +2,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
 <!-- ACTIVATE JQUERY -->
 <!-- ACTIVATE JQUERY -->
 <!-- ACTIVATE JQUERY -->
@@ -25,34 +23,55 @@ crossorigin="anonymous"></script>
 
 
 
-<div class="main2">
-   <div class="userInfo">
-     <div class="userImage"> image </div>
-     <p class="userName">
-       <strong>Name:</strong>
-       <%= @user.name %>
-     </p>
+    <div class="main2">
+      <div class="userInfo">
+        <div class="userImage">
+          <%= image_tag @user.avatar %>
+        </div>
+        <p class="userName">
+          <strong>Name:</strong>
+          <%= @user.name %>
+        </p>
 
-     <p class="userEmail">
-       <strong>Email:</strong>
-       <%= @user.email %>
-     </p>
+        <p class="userEmail">
+          <strong>Email:</strong>
+          <%= @user.email %>
+        </p>
 
-     <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary" %> |
-     <%= link_to 'Back', users_path,class: "btn btn-primary"%>
-   </div>
-
-
-   <div class="userTrip">
-     <div class="trip-button">
-         <label class="createtrip">Create my trip</label>
-     </div>
-   </div>
+        <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary" %> |
+        <%= link_to 'Back', users_path,class: "btn btn-primary"%>
+      </div>
 
 
 
+      <div class="userTrip">
+        <div class="trip-button">
+          <label class="createtrip">Create my trip</label>
+        </div>
 
+        <!-- PRINT BUTTON# -->
+        <!-- PRINT BUTTON# -->
+        <!-- PRINT BUTTON# -->
+        <!-- PRINT BUTTON# -->
+        <button onclick="myFunction()">Print this page</button>
 
-</div>
- </body>
- </html>
+        <!-- PRINT SCRIPT -->
+        <!-- PRINT SCRIPT -->
+        <!-- PRINT SCRIPT -->
+        <!-- PRINT SCRIPT -->
+        <script>
+        function myFunction() {
+          window.print();
+        }
+        </script>
+      </div>
+
+      <!-- FOOTER  -->
+      <!-- FOOTER -->
+      <!-- FOOTER -->
+      <!-- FOOTER -->
+      <%= render 'foot' %>
+
+    </div>
+  </body>
+  </html>
