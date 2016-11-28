@@ -1,130 +1,131 @@
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Travelize</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.js"
-  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-  crossorigin="anonymous"></script>
-  <script src="./app/assets/javascripts/effects.js"></script>
-</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.js"
+integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+crossorigin="anonymous"></script>
+<script src="./app/assets/javascripts/effects.js"></script> -->
 <body>
   <div class="mycontainer">
 
 
-    <div class="headerRow">
-      <div class="words">
-        <% if current_user %>
-        Hello,<%= current_user.name %> <%= link_to "Logout", '/logout'%>
-        <% else %>
-        <%= link_to 'Login', '/login' %>  <%= link_to 'Signup', '/signup' %>
-        <% end %>
 
-        <%= yield %>
-        <!-- <a><%= link_to 'Login', login_path %></a>
-        <a><%= link_to 'Register', login_path %></a> -->
+    <!-- DISPLAYS NAV BAR 1 -->
+    <!-- DISPLAYS NAV BAR 1 -->
+    <!-- DISPLAYS NAV BAR 1 -->
+    <!-- DISPLAYS NAV BAR 1 -->
+    <%= render 'nav' %>
+
+
+
+
+
+    <!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+    <!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+    <!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+    <!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+    <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Log in
+  </button>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  <h4 class="modal-title" id="myModalLabel">Log in</h4>
+</div>
+
+<div class="modal-body">
+<form role="form">
+<div class="form-group">
+<div class="input-group">
+<input type="text" class="form-control" id="uLogin" placeholder="Login">
+<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+</div>
+</div>
+
+<div class="form-group">
+<div class="input-group">
+<input type="password" class="form-control" id="uPassword" placeholder="Password">
+<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+</div>
+</div>
+
+<div class="checkbox">
+<label>
+<input type="checkbox"> Remember me
+</label>
+</div>
+</form>
+
+</div>
+
+<div class="modal-footer">
+<button class="form-control btn btn-primary">Ok</button>
+
+<div class="progress">
+<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+<span class="sr-only">progress</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div> -->
+
+
+
+
+
+<!-- LOGO -->
+<!-- LOGO -->
+<!-- LOGO -->
+<!-- LOGO -->
+<!-- <div><a  id="logo"href="" src="./assets/img/Travelize_Logo.png"></a></div> -->
+
+
+
+<!-- DISPLAYS MAIN PAGE -->
+<!-- DISPLAYS MAIN PAGE -->
+<!-- DISPLAYS MAIN PAGE -->
+<!-- DISPLAYS MAIN PAGE -->
+<div class="main">
+  <div id="video-background">
+    <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true, muted: true%>
+    <div class="mainSearch">
+      <%= form_tag("/list_venues", method: "post",class: "form") do %>
+      <div class="where">
+        <p id="locationTag">Where</p>
+        <%= search_field_tag :location, '', id: 'location' , placeholder: "Destination, city, address"%>
       </div>
-    </div>
-
-
-      <!-- <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-          Log in
-      </button>
-
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      	<div class="modal-dialog">
-      		<div class="modal-content">
-
-      			<div class="modal-header">
-      				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      				<h4 class="modal-title" id="myModalLabel">Log in</h4>
-      			</div>
-
-      			<div class="modal-body">
-      				<form role="form">
-      					<div class="form-group">
-      						<div class="input-group">
-      							<input type="text" class="form-control" id="uLogin" placeholder="Login">
-      							<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
-      						</div>
-      					</div>
-
-      					<div class="form-group">
-      						<div class="input-group">
-      							<input type="password" class="form-control" id="uPassword" placeholder="Password">
-      							<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
-      						</div>
-      					</div>
-
-      					<div class="checkbox">
-      						<label>
-      							<input type="checkbox"> Remember me
-      						</label>
-      					</div>
-      				</form>
-
-      			</div>
-
-      			<div class="modal-footer">
-      				<button class="form-control btn btn-primary">Ok</button>
-
-      				<div class="progress">
-      					<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
-      						<span class="sr-only">progress</span>
-      					</div>
-      				</div>
-      			</div>
-
-      		</div>
-      	</div>
-      </div> -->
-
-
-    <div class="navTop">
-      <div class="words2">
-        <%= link_to 'About', root_path %>
-        <%= link_to 'Trips', root_path %>
-        <%= link_to 'Contact', root_path %>
-        <!-- <%= link_to 'Contact', root_path %> -->
+      <div class="what">
+        <p id="interestTag">What</p>
+        <%= select_tag "interest", options_for_select(["Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest', placeholder: "Categories" %>
       </div>
-    </div>
-
-    <!-- <div><a  id="logo"href="" src="./assets/img/Travelize_Logo.png"></a></div> -->
-
-
-
-
-    <div class="main">
-      <div id="video-background">
-        <%= video_tag "travelize.mp4", autoplay:true, width: "100%", loop: true, muted: true%>
-        <div class="mainSearch">
-          <%= form_tag("/list_venues", method: "post",class: "form") do %>
-          <div class="where">
-            <p id="locationTag">Where</p>
-            <%= search_field_tag :location, '', id: 'location' , placeholder: "Destination, city, address"%>
-          </div>
-          <div class="what">
-            <p id="interestTag">What</p>
-            <%= select_tag "interest", options_for_select(["Restaurants", "Shopping", "Art", "History", "LGBTQ", "Nightlife", "Sports", "Pubs & Breweries", "Nature", "Music"]), id: 'interest', placeholder: "Categories" %>
-          </div>
-          <div class="searchContainer">
-            <div class="searchBtn">
-              <%= submit_tag("Search", :class => 'searchBtn') %>
-              <% end %>
-            </div>
-          </div>
+      <div class="searchContainer">
+        <div class="searchBtn">
+          <%= submit_tag("Search", :class => 'searchBtn') %>
+          <% end %>
         </div>
       </div>
     </div>
-
-
-
-
   </div>
+</div>
+
+
+
+
+</div>
 </body>
 </html>

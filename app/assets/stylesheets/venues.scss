@@ -2,14 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body {
+  font-family:'Brandon Grotesque';
+}
 
 .maincontainer {
   min-width: 960px;
   background-color: #020204 ;
   width: 100%;
   height: 100%;
-  font-family: 'Rubik', sans-serif !important;
+
 }
 
 .maindiv {
@@ -44,23 +46,20 @@
   display: inline;
   float: left;
 
+
 }
 
 .venues {
-  min-height: 175px;
+  min-height: 220px;
   border-bottom: 1px solid #b5b5b5;
   padding-top: 30px;
+  padding-bottom: 100px;
   background-color: rgba(255,255,255,.9);
   color: #505151;
   width: 675px;
   margin: 0 auto;
   line-height: 1.55em;
-  font-family: 'Rubik', sans-serif;
 
-
-}
-p, venues p {
-  font-family: 'Rubik', sans-serif;
 }
 .venues a{
   text-decoration: none;
@@ -76,10 +75,18 @@ p, venues p {
 
 .venues li:last-child {
   float: right;
-  margin-right: 30px;
+  margin-right: 50px;
+  position: relative;
+  top: 30px;
 
 }
 
+
+.venues li:nth-child(3) {
+
+  width: 300px;
+
+}
 .venues:first-child {
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -94,8 +101,8 @@ p, venues p {
 .phone {
   margin-top: -10px;
 }
-.image img {
 
+.image img {
   width: 125px;
   margin: 0 20px 0 10px;
   border: 10px solid #fff;
@@ -106,7 +113,6 @@ p, venues p {
 #venue-check {
 
   display:inline-block;
-
   position: relative;
   top: 45px;
 
@@ -121,6 +127,16 @@ input[type=checkbox]{
   display:inline-block;
   vertical-align:middle;
 }
+
+
+
+
+
+// -webkit-----------------------CREATE TRIP BUTTON : ;
+// -moz-----------------------CREATE TRIP BUTTON : ;
+// -ms-----------------------CREATE TRIP BUTTON : ;
+// -o-----------------------CREATE TRIP BUTTON : ;
+// ----------------------CREATE TRIP BUTTON : ;
 .createtrip {
   background: #0272bd;
   background-image: -webkit-linear-gradient(top, #0272bd, #60acdb);
@@ -153,7 +169,7 @@ input[type=checkbox]{
 }
 
 .trip-button {
-  font-family: 'Rubik', sans-serif;
+
   display:flex;
   justify-content:center;
   align-items:center;
