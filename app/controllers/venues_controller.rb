@@ -11,13 +11,10 @@ class VenuesController < ApplicationController
     terms = {
       term: params[:interest].nil? ? "restaurants" : params[:interest]
     }
-    if params[:location].blank?
-      return
-    else
-      @response = Yelp.client.search(params[:location], terms )
-    end
+    @response = Yelp.client.search(params[:location], terms) if params[:location]
 
-    render layout: true
+    @trip = Trip.new
+    @trip.venues.build
   end
 
   # GET /venues/1
