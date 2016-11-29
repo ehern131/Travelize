@@ -1,0 +1,1337 @@
+Started GET "/" for 127.0.0.1 at 2016-11-28 21:50:51 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (7.3ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (5202.5ms)
+Completed 200 OK in 5374ms (Views: 5346.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-28 21:51:14 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XgLMm4upRUye7zV+TM6tR58RJhbKcOGiM8ghDshfAjOUpUcDy6EVqOOOpm/ynnebUpHCmoSImkULMU5DaMcrsQ==", "location"=>"las vegas ", "interest"=>"Nightlife", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (157.2ms)
+Completed 200 OK in 1137ms (Views: 192.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-28 21:56:19 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.8ms)
+  Rendered users/_foot.html.erb (0.2ms)
+  Rendered users/welcome.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-28 21:56:35 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C+0OQf1KRyU0EDc0nxW7T2xkem6uOxvHzqZuOaWv0LXBSoXZvUIXwUlxpCUhRWGToeSe4uDDYCD2XwF0BTf5Nw==", "location"=>"las vegas ", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.9ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 979ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-28 21:57:09 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:TripsController> at /Users/ErickHernandez/Desktop/wyncode/travelize/app/controllers/trips_controller.rb:3)
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8vHBQch6x9f3LrFC7q1eQNXWNc7Rk58WAbfVdbW8leo4VkrZiHKXM4pPIlNQ/YScGFbRQp9r5PE5Tro4FSS8aA==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"To See Roll", "address"=>"7040 S Rainbow Blvd\r\nSte 110\r\nSpring Valley\r\nLas Vegas, NV 89113"}, "1"=>{"enable"=>"0", "name"=>"Loftti Cafe", "address"=>"7729 S Rainbow Blvd\r\nSte 9B\r\nSouthwest\r\nLas Vegas, NV 89113"}, "2"=>{"enable"=>"0", "name"=>"Hobak Korean BBQ", "address"=>"5808 Spring Mountain Rd\r\nSte 101\r\nChinatown\r\nLas Vegas, NV 89146"}, "3"=>{"enable"=>"0", "name"=>"EATT Healthy Food", "address"=>"7865 W Sahara Ave\r\nSte 104 & 105\r\nWestside\r\nLas Vegas, NV 89117"}, "4"=>{"enable"=>"0", "name"=>"Yum Cha", "address"=>"4945 W Tropicana Ave\r\nLas Vegas, NV 89103"}, "5"=>{"enable"=>"0", "name"=>"Gangnam Asian BBQ Dining", "address"=>"4480 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89169"}, "6"=>{"enable"=>"0", "name"=>"Soho Sushi Bowlrrito", "address"=>"6040 W Badura Ave\r\nSte 150\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "7"=>{"enable"=>"0", "name"=>"Sweet Poké", "address"=>"7965 S Rainbow Blvd\r\nSte 135\r\nSouthwest\r\nLas Vegas, NV 89139"}, "8"=>{"enable"=>"0", "name"=>"Dirt Dog", "address"=>"8390 S Rainbow Blvd\r\nSte 100\r\nSouthwest\r\nLas Vegas, NV 89139"}, "9"=>{"enable"=>"0", "name"=>"Carson Kitchen", "address"=>"124 S 6th St\r\nSte 100\r\nDowntown\r\nLas Vegas, NV 89101"}, "10"=>{"enable"=>"0", "name"=>"OWL", "address"=>"3990 W Russell Rd\r\nSte 1\r\nLas Vegas, NV 89118"}, "11"=>{"enable"=>"0", "name"=>"Mochiko Chicken", "address"=>"2101 S Decatur Blvd\r\nWestside\r\nLas Vegas, NV 89102"}, "12"=>{"enable"=>"0", "name"=>"Jaburritos", "address"=>"6090 S Rainbow Blvd\r\nSte 2\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "13"=>{"enable"=>"0", "name"=>"SkinnyFATS", "address"=>"6261 Dean Martin Dr\r\nLas Vegas, NV 89118"}, "14"=>{"enable"=>"0", "name"=>"The Smashed Pig Gastropub", "address"=>"509 Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "15"=>{"enable"=>"0", "name"=>"Luke's Lobster", "address"=>"3200 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "16"=>{"enable"=>"0", "name"=>"Therapy", "address"=>"518 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "17"=>{"enable"=>"1", "name"=>"Rollin Smoke Barbeque", "address"=>"3185 S Highland Dr\r\nLas Vegas, NV 89109"}, "18"=>{"enable"=>"1", "name"=>"Mr Mamas", "address"=>"5693 S Jones Blvd\r\nSte 106\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "19"=>{"enable"=>"1", "name"=>"La Maison de Maggie", "address"=>"3455 S Durango Dr\r\nSte 112\r\nSpring Valley\r\nLas Vegas, NV 89117"}}, "title"=>"vegas ", "start_time(1i)"=>"2017", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"02", "start_time(5i)"=>"56", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29", "end_time(4i)"=>"02", "end_time(5i)"=>"56"}, "commit"=>"Create my trip"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-28 21:57:09 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-11-28 21:57:17 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"likL2Bn8BlNIizxtJMvQzquC4QcU2U1YgLvoEH+vQe9cjoBAWfRWtzXqr3yamwoSZgIFi1ohNr+4Qodd3zdobQ==", "email"=>"ehern131@gmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ehern131@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-28 21:57:17 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.5ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-28 21:57:23 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pRMLqemAKy8jzfo4FA+RvZO4FYUocP0QYSLErT1Y6mNvtIAxqYh7y16saSmqX0thXjjxCWaIhvdZ26vgncDD4Q==", "location"=>"vegas ", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 946ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-28 21:57:34 -0500
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B3vR1sJlCe99I+n5m0erghX1aDuBS6kC7QZ6PpJNKzTN3FpOgm1ZCwBCeuglF3Fe2HWMt8+z0uXV/xVzMtUCtg==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"Carson Kitchen", "address"=>"124 S 6th St\r\nSte 100\r\nDowntown\r\nLas Vegas, NV 89101"}, "1"=>{"enable"=>"0", "name"=>"Hobak Korean BBQ", "address"=>"5808 Spring Mountain Rd\r\nSte 101\r\nChinatown\r\nLas Vegas, NV 89146"}, "2"=>{"enable"=>"0", "name"=>"The Smashed Pig Gastropub", "address"=>"509 Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "3"=>{"enable"=>"0", "name"=>"EATT Healthy Food", "address"=>"7865 W Sahara Ave\r\nSte 104 & 105\r\nWestside\r\nLas Vegas, NV 89117"}, "4"=>{"enable"=>"0", "name"=>"Gangnam Asian BBQ Dining", "address"=>"4480 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89169"}, "5"=>{"enable"=>"0", "name"=>"Therapy", "address"=>"518 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "6"=>{"enable"=>"0", "name"=>"To See Roll", "address"=>"7040 S Rainbow Blvd\r\nSte 110\r\nSpring Valley\r\nLas Vegas, NV 89113"}, "7"=>{"enable"=>"0", "name"=>"Loftti Cafe", "address"=>"7729 S Rainbow Blvd\r\nSte 9B\r\nSouthwest\r\nLas Vegas, NV 89113"}, "8"=>{"enable"=>"0", "name"=>"Yum Cha", "address"=>"4945 W Tropicana Ave\r\nLas Vegas, NV 89103"}, "9"=>{"enable"=>"0", "name"=>"Mochiko Chicken", "address"=>"2101 S Decatur Blvd\r\nWestside\r\nLas Vegas, NV 89102"}, "10"=>{"enable"=>"0", "name"=>"Viva Las Arepas", "address"=>"1616 S Las Vegas Blvd\r\nSte 120\r\nDowntown\r\nLas Vegas, NV 89104"}, "11"=>{"enable"=>"0", "name"=>"Rock'N'oodles", "address"=>"1108 S 3rd St\r\nDowntown\r\nLas Vegas, NV 89104"}, "12"=>{"enable"=>"0", "name"=>"Luke's Lobster", "address"=>"3200 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "13"=>{"enable"=>"0", "name"=>"Firefly", "address"=>"3824 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89169"}, "14"=>{"enable"=>"0", "name"=>"Oyster Bar", "address"=>"Palace Station Hotel Casino\r\n2411 W Sahara Ave\r\nLas Vegas, NV 89102"}, "15"=>{"enable"=>"0", "name"=>"Rollin Smoke Barbeque", "address"=>"3185 S Highland Dr\r\nLas Vegas, NV 89109"}, "16"=>{"enable"=>"0", "name"=>"Tacos El Gordo", "address"=>"3049 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "17"=>{"enable"=>"0", "name"=>"El Dorado Cantina", "address"=>"3025 Sammy Davis Jr. Dr\r\nLas Vegas, NV 89109"}, "18"=>{"enable"=>"0", "name"=>"Soho SushiBurrito", "address"=>"2600 W Sahara Ave\r\nSte 115\r\nLas Vegas, NV 89102"}, "19"=>{"enable"=>"1", "name"=>"Flock & Fowl", "address"=>"380 W Sahara Ave\r\nThe Strip\r\nLas Vegas, NV 89102"}}, "title"=>"West Coast", "start_time(1i)"=>"2017", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"02", "start_time(5i)"=>"57", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29", "end_time(4i)"=>"02", "end_time(5i)"=>"57"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "West Coast"], ["user_id", 10], ["start_time", 2017-11-29 02:57:00 UTC], ["end_time", 2016-11-29 02:57:00 UTC], ["created_at", 2016-11-29 02:57:34 UTC], ["updated_at", 2016-11-29 02:57:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Flock & Fowl"], ["address", "380 W Sahara Ave\r\nThe Strip\r\nLas Vegas, NV 89102"], ["created_at", 2016-11-29 02:57:34 UTC], ["updated_at", 2016-11-29 02:57:34 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "venue_trip_links" ("trip_id", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["trip_id", 15], ["venue_id", 191], ["created_at", 2016-11-29 02:57:34 UTC], ["updated_at", 2016-11-29 02:57:34 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/15
+Completed 302 Found in 75ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/trips/15" for 127.0.0.1 at 2016-11-28 21:57:34 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.3ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 15]]
+  Rendered trips/show.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips/15/edit" for 127.0.0.1 at 2016-11-28 21:57:40 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/_form.html.erb (46.9ms)
+  Rendered trips/edit.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trips/" for 127.0.0.1 at 2016-11-28 21:57:44 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trips/15" for 127.0.0.1 at 2016-11-28 21:57:49 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTrip Load (0.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 15]]
+  Rendered trips/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-28 21:57:50 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 64ms (Views: 60.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-28 21:59:44 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.3ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-28 21:59:47 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-28 22:20:03 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.6ms)
+  Rendered users/_foot.html.erb (0.7ms)
+  Rendered users/welcome.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 321ms (Views: 294.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-28 22:20:08 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-28 22:20:08 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 63ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-28 22:20:10 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.0ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-28 22:20:45 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdYIFgDBP7H1n8GTO3qffjPUZeMqZBUzrlbuO4NZe3JbcYOOQMlvVYj+UoKFKkWi/lSBb2ScbtSWr4F2I8FS8A==", "location"=>"las vegas", "interest"=>"Restaurants", "commit"=>"Search"}
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to api.yelp.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/venues_controller.rb:14:in `get_venues'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (136.6ms)
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-28 22:20:57 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdYIFgDBP7H1n8GTO3qffjPUZeMqZBUzrlbuO4NZe3JbcYOOQMlvVYj+UoKFKkWi/lSBb2ScbtSWr4F2I8FS8A==", "location"=>"las vegas ", "interest"=>"Nightlife", "commit"=>"Search"}
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to api.yelp.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/venues_controller.rb:14:in `get_venues'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.5ms)
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 10:28:46 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdYIFgDBP7H1n8GTO3qffjPUZeMqZBUzrlbuO4NZe3JbcYOOQMlvVYj+UoKFKkWi/lSBb2ScbtSWr4F2I8FS8A==", "location"=>"las vegas ", "interest"=>"Nightlife", "commit"=>"Search"}
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 0.0ms)
+
+
+  
+Faraday::ConnectionFailed (Failed to open TCP connection to api.yelp.com:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/venues_controller.rb:14:in `get_venues'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.6ms)
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 10:29:12 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kdYIFgDBP7H1n8GTO3qffjPUZeMqZBUzrlbuO4NZe3JbcYOOQMlvVYj+UoKFKkWi/lSBb2ScbtSWr4F2I8FS8A==", "location"=>"las vegas ", "interest"=>"Nightlife", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (21.5ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (165.4ms)
+Completed 200 OK in 2052ms (Views: 1055.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 10:29:17 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.1ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (117.6ms)
+Completed 200 OK in 192ms (Views: 155.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 10:29:23 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CbroLV/e5DqALyZo0mJRo5PJPCtHNrnC/fhx9JRWAbPDHWO1H9a03v1OtXlsMot/XknYpwnOwiXFAR65NM4oMQ==", "location"=>"las vegas ", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 1019ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 10:31:58 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.0ms)
+  Rendered users/_foot.html.erb (0.7ms)
+  Rendered users/welcome.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 10:32:07 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 10:32:14 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m5Kln7VDkELzdgWGVJLroFOtZ7Ye6Wl33H+1yUP1K7dRNS4H9UvApo4XlpfqwjF8ni2DOlAREpDkhtqE420CNQ==", "location"=>"las vegas", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (2.0ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 1147ms (Views: 96.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 10:34:12 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.9ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:21:54 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (10.1ms)
+  Rendered users/_foot.html.erb (0.8ms)
+  Rendered users/welcome.html.erb within layouts/application (978.2ms)
+Completed 200 OK in 1245ms (Views: 1203.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:23:26 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.2ms)
+  Rendered users/welcome.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:29:17 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/welcome.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/ErickHernandez/Desktop/wyncode/travelize/app/views/users/welcome.html.erb:45: syntax error, unexpected tLABEL, expecting keyword_end
+..."]]),{ class: 'dropdown1'}) id: 'interest', placeholder: "Ca...
+...                               ^
+/Users/ErickHernandez/Desktop/wyncode/travelize/app/views/users/welcome.html.erb:45: syntax error, unexpected ',', expecting keyword_end
+...: 'dropdown1'}) id: 'interest', placeholder: "Categories");@...
+...                               ^
+/Users/ErickHernandez/Desktop/wyncode/travelize/app/views/users/welcome.html.erb:45: syntax error, unexpected ')', expecting keyword_end
+...st', placeholder: "Categories");@output_buffer.safe_append='
+...                               ^):
+  
+app/views/users/welcome.html.erb:45: syntax error, unexpected tLABEL, expecting keyword_end
+app/views/users/welcome.html.erb:45: syntax error, unexpected ',', expecting keyword_end
+app/views/users/welcome.html.erb:45: syntax error, unexpected ')', expecting keyword_end
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:31:35 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.8ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 111ms (Views: 109.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:31:38 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 11:31:44 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 114ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 12:27:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (7.0ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (327.6ms)
+Completed 200 OK in 403ms (Views: 392.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 12:27:54 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q5t3+JD+6hzhjr6I5ljS30dgUvXOIZ/wnTkurSVWhv1hPPxg0Pa6+JzvLZlYCAgDiuC2eYDZ5BelwEHghc6vfw==", "location"=>"las vegas ", "interest"=>"Nightlife", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (300.3ms)
+Completed 200 OK in 1982ms (Views: 346.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-29 12:28:04 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:TripsController> at /Users/ErickHernandez/Desktop/wyncode/travelize/app/controllers/trips_controller.rb:3)
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1TdSLp70KTV76iwFQFQ9/4xqJvmeyV7hUfy2eHe7Jr4fkNm23vx50QaLvxT+BOcjQerCddAxJQZpBdk11yMPPA==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"1", "name"=>"Skyfall Lounge", "address"=>"Delano Las Vegas\r\n3940 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89119"}, "1"=>{"enable"=>"1", "name"=>"Velveteen Rabbit", "address"=>"1218 S Main St\r\nDowntown\r\nLas Vegas, NV 89104"}, "2"=>{"enable"=>"1", "name"=>"Eyecandy", "address"=>"Mandalay Bay Resort & Casino\r\n3950 S Las Vegas Boulevard\r\nThe Strip\r\nLas Vegas, NV 89119"}, "3"=>{"enable"=>"0", "name"=>"The Laundry Room", "address"=>"525 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "4"=>{"enable"=>"0", "name"=>"Bare Pool Lounge", "address"=>"The Mirage Hotel & Casino\r\n3400 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "5"=>{"enable"=>"0", "name"=>"LAX Nightclub", "address"=>"Luxor Las Vegas\r\n3900 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "6"=>{"enable"=>"0", "name"=>"The Chandelier", "address"=>"The Cosmopolitan Of Las Vegas\r\n3708 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "7"=>{"enable"=>"0", "name"=>"Dispensary Lounge", "address"=>"2451 E Tropicana Ave\r\nSoutheast\r\nLas Vegas, NV 89121"}, "8"=>{"enable"=>"0", "name"=>"Parasol Up / Parasol Down", "address"=>"3131 Las Vegas Blvd. South\r\nThe Strip\r\nLas Vegas, NV 89109"}, "9"=>{"enable"=>"0", "name"=>"Ghostbar", "address"=>"4321 W Flamingo Rd\r\nPalms Casino Resort\r\nLas Vegas, NV 89103"}, "10"=>{"enable"=>"0", "name"=>"Downtown Cocktail Room", "address"=>"111 Las Vegas Blvd S\r\nDowntown\r\nLas Vegas, NV 89101"}, "11"=>{"enable"=>"0", "name"=>"Gold Diggers", "address"=>"Golden Nugget Hotel Casino\r\n129 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "12"=>{"enable"=>"0", "name"=>"Athena Hookah Lounge", "address"=>"4266 S Durango Dr\r\nSpring Valley\r\nLas Vegas, NV 89147"}, "13"=>{"enable"=>"0", "name"=>"Double Down Saloon", "address"=>"4640 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89109"}, "14"=>{"enable"=>"0", "name"=>"The Waterhole", "address"=>"5115 Spring Mountain Rd\r\nSte 123\r\nChinatown\r\nLas Vegas, NV 89146"}, "15"=>{"enable"=>"0", "name"=>"Bond", "address"=>"The Cosmopolitan Of Las Vegas\r\n3708 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "16"=>{"enable"=>"0", "name"=>"Frankie's Tiki Room", "address"=>"1712 W Charleston Blvd\r\nDowntown\r\nLas Vegas, NV 89102"}, "17"=>{"enable"=>"0", "name"=>"Hakkasan Nightclub", "address"=>"MGM Grand Hotel and Casino\r\n3799 Las Vegas Blvd S\r\nEastside\r\nLas Vegas, NV 89109"}, "18"=>{"enable"=>"0", "name"=>"No Regrets Bar", "address"=>"8349 W Sunset Rd, Ste 150\r\nSte 150\r\nSpring Valley\r\nLas Vegas, NV 89113"}, "19"=>{"enable"=>"0", "name"=>"Viva Lounge", "address"=>"3405 S Jones Blvd\r\nChinatown\r\nLas Vegas, NV 89146"}}, "title"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"17", "start_time(5i)"=>"27", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29", "end_time(4i)"=>"17", "end_time(5i)"=>"27"}, "commit"=>"Create my trip"}
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorize rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-29 12:28:04 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 12:28:06 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.9ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 53ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-11-29 12:28:14 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j2Ja0o8YbsvTSlrYZFXL2PzeLXFzrzOPpfXhck7Jb8tFxdFKzxA+L64rycnaBREEMV7J/T1XSGidDI4/7lFGSQ==", "email"=>"ehern131@gmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ehern131@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 150ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 12:28:14 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.9ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 12:28:19 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"juYm6quJ9bcb8ylb8jkwK/0f9QT+/4sCuuhGs9u67rFEQa1y64GlU2aSukpMaer3MJ8RiLAH8OWCESn+eyLHMw==", "location"=>"las vegas", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 1078ms (Views: 65.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-29 12:28:24 -0500
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a7kdP4nMcMuaWpwszflOkQEsxzUBnxOotVxHPWop9YehHpanycQgL+c7Dz1zqZRNzKwjuU9naE+NpShwyrHcBQ==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"To See Roll", "address"=>"7040 S Rainbow Blvd\r\nSte 110\r\nSpring Valley\r\nLas Vegas, NV 89113"}, "1"=>{"enable"=>"0", "name"=>"Loftti Cafe", "address"=>"7729 S Rainbow Blvd\r\nSte 9B\r\nSouthwest\r\nLas Vegas, NV 89113"}, "2"=>{"enable"=>"0", "name"=>"Hobak Korean BBQ", "address"=>"5808 Spring Mountain Rd\r\nSte 101\r\nChinatown\r\nLas Vegas, NV 89146"}, "3"=>{"enable"=>"0", "name"=>"EATT Healthy Food", "address"=>"7865 W Sahara Ave\r\nSte 104 & 105\r\nWestside\r\nLas Vegas, NV 89117"}, "4"=>{"enable"=>"0", "name"=>"Yum Cha", "address"=>"4945 W Tropicana Ave\r\nLas Vegas, NV 89103"}, "5"=>{"enable"=>"0", "name"=>"Gangnam Asian BBQ Dining", "address"=>"4480 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89169"}, "6"=>{"enable"=>"0", "name"=>"Soho Sushi Bowlrrito", "address"=>"6040 W Badura Ave\r\nSte 150\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "7"=>{"enable"=>"0", "name"=>"Sweet Poké", "address"=>"7965 S Rainbow Blvd\r\nSte 135\r\nSouthwest\r\nLas Vegas, NV 89139"}, "8"=>{"enable"=>"1", "name"=>"Dirt Dog", "address"=>"8390 S Rainbow Blvd\r\nSte 100\r\nSouthwest\r\nLas Vegas, NV 89139"}, "9"=>{"enable"=>"1", "name"=>"Carson Kitchen", "address"=>"124 S 6th St\r\nSte 100\r\nDowntown\r\nLas Vegas, NV 89101"}, "10"=>{"enable"=>"0", "name"=>"OWL", "address"=>"3990 W Russell Rd\r\nSte 1\r\nLas Vegas, NV 89118"}, "11"=>{"enable"=>"0", "name"=>"Mochiko Chicken", "address"=>"2101 S Decatur Blvd\r\nWestside\r\nLas Vegas, NV 89102"}, "12"=>{"enable"=>"0", "name"=>"Jaburritos", "address"=>"6090 S Rainbow Blvd\r\nSte 2\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "13"=>{"enable"=>"0", "name"=>"The Smashed Pig Gastropub", "address"=>"509 Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "14"=>{"enable"=>"0", "name"=>"SkinnyFATS", "address"=>"6261 Dean Martin Dr\r\nLas Vegas, NV 89118"}, "15"=>{"enable"=>"0", "name"=>"Luke's Lobster", "address"=>"3200 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "16"=>{"enable"=>"0", "name"=>"Rollin Smoke Barbeque", "address"=>"3185 S Highland Dr\r\nLas Vegas, NV 89109"}, "17"=>{"enable"=>"0", "name"=>"Therapy", "address"=>"518 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "18"=>{"enable"=>"0", "name"=>"Mr Mamas", "address"=>"5693 S Jones Blvd\r\nSte 106\r\nSpring Valley\r\nLas Vegas, NV 89118"}, "19"=>{"enable"=>"0", "name"=>"La Maison de Maggie", "address"=>"3455 S Durango Dr\r\nSte 112\r\nSpring Valley\r\nLas Vegas, NV 89117"}}, "title"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "start_time(4i)"=>"17", "start_time(5i)"=>"28", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29", "end_time(4i)"=>"17", "end_time(5i)"=>"28"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", ""], ["user_id", 10], ["start_time", 2016-11-29 17:28:00 UTC], ["end_time", 2016-11-29 17:28:00 UTC], ["created_at", 2016-11-29 17:28:24 UTC], ["updated_at", 2016-11-29 17:28:24 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dirt Dog"], ["address", "8390 S Rainbow Blvd\r\nSte 100\r\nSouthwest\r\nLas Vegas, NV 89139"], ["created_at", 2016-11-29 17:28:24 UTC], ["updated_at", 2016-11-29 17:28:24 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "venue_trip_links" ("trip_id", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["trip_id", 16], ["venue_id", 192], ["created_at", 2016-11-29 17:28:24 UTC], ["updated_at", 2016-11-29 17:28:24 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carson Kitchen"], ["address", "124 S 6th St\r\nSte 100\r\nDowntown\r\nLas Vegas, NV 89101"], ["created_at", 2016-11-29 17:28:24 UTC], ["updated_at", 2016-11-29 17:28:24 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "venue_trip_links" ("trip_id", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["trip_id", 16], ["venue_id", 193], ["created_at", 2016-11-29 17:28:24 UTC], ["updated_at", 2016-11-29 17:28:24 UTC]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/16
+Completed 302 Found in 79ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/trips/16" for 127.0.0.1 at 2016-11-29 12:28:24 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 16]]
+  Rendered trips/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:29:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (106.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (742.7ms)
+Completed 200 OK in 982ms (Views: 960.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-29 13:29:46 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-29 13:29:46 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 89ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:29:49 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.8ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 97ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:30:01 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pysQIVgZSSLQDIGi/aJhOHgLRnRmYTEgPTNotLA0V91tjJu5GBEZxq1tErND8rvktYui+CiZSscFygf5EKx+Xw==", "location"=>"las vegas ", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (178.8ms)
+Completed 200 OK in 1747ms (Views: 218.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-11-29 13:30:11 -0500
+Processing by SessionsController#create as */*
+  Parameters: {"email"=>"ehern131@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ehern131@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 200 OK in 86ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:30:11 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.6ms)
+  Rendered users/_foot.html.erb (0.6ms)
+  Rendered users/welcome.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:32:09 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.4ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 285ms (Views: 281.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:32:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8XTXkS8RQPaF+DevCMtQoA/XE/Yj+FQJak3VOr78kUY701wJbxkQEviZpL62m4p8wlf3em0AL+5StLp3HmS4xA==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.7ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 1021ms (Views: 64.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:32:47 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.4ms)
+  Rendered users/_foot.html.erb (0.2ms)
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 65ms (Views: 43.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:32:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (13.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (26.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (182.7ms)
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:33:42 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.6ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2016-11-29 13:33:49 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-11-29 13:33:49 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:33:50 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.1ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 72ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-11-29 13:34:22 -0500
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 94ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:34:27 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AycIn2k9GffInmwcMHADF3Q0rnoiimuxBQp7t/fw+EfJgIMHKTVJE7X//w2OINnLubRK9mxyEFY98xT6V2jRxQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1093ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:35:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 58ms (Views: 54.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:35:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (116.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (246.1ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:35:27 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:35:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (11.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.7ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:35:30 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.5ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:35:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (15.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.3ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:35:36 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.2ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 71ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:35:55 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AycIn2k9GffInmwcMHADF3Q0rnoiimuxBQp7t/fw+EfJgIMHKTVJE7X//w2OINnLubRK9mxyEFY98xT6V2jRxQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.7ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 1097ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:36:38 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:37:19 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.7ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:37:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (6.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (364.9ms)
+Completed 200 OK in 473ms (Views: 457.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:37:44 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (1.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 181ms (Views: 91.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:38:12 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 66ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:38:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.1ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:38:20 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBP1ssxdc5r7aaZYoyOuUdOMUrzYu8Z8mJvJbiF+ODcKtH4qjFUjfoYINUkdc3SNHgy2MJZDvZugYqYjgeYRtQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (2.1ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 1123ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:41:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (3.7ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 414ms (Views: 327.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:41:51 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBP1ssxdc5r7aaZYoyOuUdOMUrzYu8Z8mJvJbiF+ODcKtH4qjFUjfoYINUkdc3SNHgy2MJZDvZugYqYjgeYRtQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 1112ms (Views: 71.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:42:09 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBP1ssxdc5r7aaZYoyOuUdOMUrzYu8Z8mJvJbiF+ODcKtH4qjFUjfoYINUkdc3SNHgy2MJZDvZugYqYjgeYRtQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 1172ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:42:28 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.0ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 87ms (Views: 59.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:42:28 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (15.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (145.0ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:43:01 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.7ms)
+  Rendered users/show.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `trip' for #<User:0x007fe4029f9078>
+Did you mean?  trips):
+    45:         <div class="trip-button">
+    46:           <label class="createtrip">Create my trip</label>
+    47:         </div>
+    48:         <%= @user.trip %>
+    49: 
+    50:         <button onclick="myFunction()">Print this page</button>
+    51: 
+  
+app/views/users/show.html.erb:48:in `_app_views_users_show_html_erb__2952084348382824446_70308636610800'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.2ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:43:05 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 52ms (Views: 47.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:43:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (20.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.9ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:43:06 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:43:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (22.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (149.8ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:44:47 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_id' for nil:NilClass):
+    46:           <label class="createtrip">Create my trip</label>
+    47:         </div>
+    48:         <%= @user.trips %>
+    49:         <%= @trip.user_id %>
+    50: 
+    51:         <button onclick="myFunction()">Print this page</button>
+    52: 
+  
+app/views/users/show.html.erb:49:in `_app_views_users_show_html_erb__2952084348382824446_70308644455940'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.6ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:45:16 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.2ms)
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 48ms (Views: 45.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:45:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (14.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.6ms)
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:46:39 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (0.9ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 269ms (Views: 266.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:46:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (17.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (147.6ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:46:40 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.9ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 79ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:46:44 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBP1ssxdc5r7aaZYoyOuUdOMUrzYu8Z8mJvJbiF+ODcKtH4qjFUjfoYINUkdc3SNHgy2MJZDvZugYqYjgeYRtQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 918ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 13:47:18 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (0.8ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 13:47:21 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBP1ssxdc5r7aaZYoyOuUdOMUrzYu8Z8mJvJbiF+ODcKtH4qjFUjfoYINUkdc3SNHgy2MJZDvZugYqYjgeYRtQ==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (1.2ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 1293ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2016-11-29 13:48:04 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.0ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 55ms (Views: 52.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/images/original/missing.png" for 127.0.0.1 at 2016-11-29 13:48:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/images/original/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.1) lib/puma/configuration.rb:225:in `call'
+puma (3.6.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.1) lib/puma/server.rb:415:in `process_client'
+puma (3.6.1) lib/puma/server.rb:275:in `block in run'
+puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [39 times] (15.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.3ms)
+Started GET "/" for 127.0.0.1 at 2016-11-29 13:50:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (8.3ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (354.2ms)
+Completed 200 OK in 457ms (Views: 444.1ms | ActiveRecord: 0.0ms)
+
+

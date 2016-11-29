@@ -45,34 +45,34 @@ crossorigin="anonymous"></script>
         <div class="trip-button">
           <label class="createtrip">Create my trip</label>
         </div>
-
+        <%= @user.trips %>
 
         <button onclick="myFunction()">Print this page</button>
 
       </div>
 
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
 
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <script>
-        function myFunction() {
-          window.print();
-        }
-        </script>
-      </div>
-
-      <!-- FOOTER  -->
-      <!-- FOOTER -->
-      <!-- FOOTER -->
-      <!-- FOOTER -->
-      <%= render 'foot' %>
-
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <script>
+      function myFunction() {
+        window.print();
+      }
+      </script>
     </div>
-  </body>
-  </html>
+
+    <!-- FOOTER  -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <%= render 'foot' %>
+
+  </div>
+</body>
+</html>
