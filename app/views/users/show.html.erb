@@ -25,13 +25,15 @@ crossorigin="anonymous"></script>
 
     <div class="main2">
       <div class="userInfo">
+
+        <p class="userName">
+          <%= @user.name %>
+        </p>
+
         <div class="userImage">
           <%= image_tag @user.avatar %>
         </div>
-        <p class="userName">
-          <strong>Name:</strong>
-          <%= @user.name %>
-        </p>
+
 
         <p class="userEmail">
           <strong>Email:</strong>
@@ -40,38 +42,38 @@ crossorigin="anonymous"></script>
 
         <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary" %> |
         <%= link_to 'Back', users_path,class: "btn btn-primary"%>
-      </div>
 
-
-
-      <div class="userTrip">
         <div class="trip-button">
           <label class="createtrip">Create my trip</label>
         </div>
+        <% @user.trips %>
 
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
         <button onclick="myFunction()">Print this page</button>
 
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <script>
-        function myFunction() {
-          window.print();
-        }
-        </script>
       </div>
 
-      <!-- FOOTER  -->
-      <!-- FOOTER -->
-      <!-- FOOTER -->
-      <!-- FOOTER -->
-      <%= render 'foot' %>
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
+      <!-- PRINT BUTTON# -->
 
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <!-- PRINT SCRIPT -->
+      <script>
+      function myFunction() {
+        window.print();
+      }
+      </script>
     </div>
-  </body>
-  </html>
+
+    <!-- FOOTER  -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <%= render 'foot' %>
+
+  </div>
+</body>
+</html>

@@ -110,7 +110,7 @@ body {
   border-radius: 6px;
 }
 
-#venue-check {
+.venue-check {
 
   display:inline-block;
   position: relative;
@@ -127,8 +127,6 @@ input[type=checkbox]{
   display:inline-block;
   vertical-align:middle;
 }
-
-
 
 
 
@@ -169,9 +167,12 @@ input[type=checkbox]{
 }
 
 .trip-button {
-
   display:flex;
   justify-content:center;
   align-items:center;
   margin: 30px 0 30px 15px;
+
+  input {
+    color: black;
+  }
 }

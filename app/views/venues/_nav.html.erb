@@ -3,18 +3,74 @@
 <!-- NAV BAR 1 -->
 <!-- NAV BAR 1 -->
 <div class="headerRow">
-  <div class="words">
-    <% if current_user %>
-    Hello,<%= current_user.name %> <%= link_to "Logout", '/logout'%>
-    <% else %>
-    <%= link_to 'Login', '/login' %>  <%= link_to 'Signup', '/signup' %>
-    <% end %>
+  <!-- LOGO -->
+  <!-- LOGO -->
+  <!-- LOGO -->
+  <!-- LOGO -->
+<a  id="logo"href="" src="./assets/img/Travelize_Logo.png"></a>
+<div class="words">
+<% if current_user %>
+Hello, <%= current_user.name %> <%= link_to "Logout", '/logout'%>
+<% else %>
+<button class="login" data-toggle="modal" data-target="#myModal">
+    LOG IN
+  </button>
+  <%= link_to "Register", '/signup'%>
+<% end %>
+</div>
+</div>
+<!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+<!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+<!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+<!-- CODE BELOW IS FOR MODAL POP UP SIGN-IN (TESTING) -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
 
-    <%= yield %>
-    <!-- <a><%= link_to 'Login', login_path %></a>
-    <a><%= link_to 'Register', login_path %></a> -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+      </div>
+
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" id="uLogin" placeholder="Email">
+              <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <input type="password" class="form-control" id="uPassword" placeholder="Password">
+              <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+            </div>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="form-control btn btn-primary">Ok</button>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+            <span class="sr-only">progress</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
+
 
 
 <!-- NAV BAR 2 -->

@@ -1,64 +1,64 @@
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.1.1.js"
-integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-crossorigin="anonymous"></script>
-</head>
-<body>
-
-  <div class="maincontainer">
-
-
-    <!-- NAV BAR 1 -->
-    <!-- NAV BAR 1 -->
-    <!-- NAV BAR 1 -->
-    <!-- NAV BAR 1 -->
-    <%= render 'nav' %>
 
 
 
+<div class="maincontainer">
+  <!-- NAV BAR 1 -->
+  <%= render 'nav' %>
 
-
-
-    <!-- MAIN PAGE  -->
-    <!-- MAIN PAGE -->
-    <!-- MAIN PAGE -->
-    <!-- MAIN PAGE -->
-    <div class="maindiv">
+  <!-- MAIN PAGE -->
+  <div class="maindiv">
+    <%= form_for @trip do |f| %>
       <div class="results">
         <% unless @response.blank? %>
-        <% @response.businesses.each do |bus| %>
-        <ul class="venues">
-          <li><input type="checkbox" id="venue-check"></li>
-          <li class="image"><%= image_tag bus.image_url %></li>
-          <li><span class="bus-name"><%= bus.name %></span><br>
-            <p><%= simple_format bus.location.display_address.join("\n") %>
-              <%= bus.display_phone %><br>
-              <%= link_to 'Website' , ""%></p></li>
-              <!-- <li><p>Rating</p><%= bus.rating %></li> -->
-              <li><p>Rating:</p><%= image_tag bus.rating_img_url %></li>
-            </ul>
+          <% @response.businesses.each do |bus| %>
+            <%= f.fields_for :venues do |venues_f| %>
+              <ul class="venues">
+                <!-- <li><input type="checkbox" class="venue-check"></li> -->
+                <li>
+                  <%= venues_f.check_box :enable, class: 'venue-check' %>
+                  <%= venues_f.hidden_field :name, value: bus.name %>
+                  <%= venues_f.hidden_field :address, value: bus.location.display_address.join("\n") %>
+                </li>
+                <li class="image"><%= image_tag bus.image_url %></li>
+                <li><span class="bus-name"><%= bus.name %></span><br>
+                  <p><%= simple_format bus.location.display_address.join("\n") %>
+                     <%= bus.display_phone %><br>
+                     <%= link_to 'Website' , ""%>
+                  </p>
+                </li>
+                <!-- <li><p>Rating</p><%= bus.rating %></li> -->
+                <li><p>Rating:</p><%= image_tag bus.rating_img_url %></li>
+              </ul>
             <% end %>
-            <% end %>
-          </div>
-          <div class="trip-button">
-            <label class="createtrip">Create my trip</label>
-          </div>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="trip-button">
+        <div class="field">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
         </div>
 
+        <div class="field">
+          <%= f.label :start_time %>
+          <%= f.datetime_select :start_time %>
+        </div>
 
-        <!-- FOOTER  -->
-        <!-- FOOTER -->
-        <!-- FOOTER -->
-        <!-- FOOTER -->
-        <%= render 'foot' %>
+        <div class="field">
+          <%= f.label :end_time %>
+          <%= f.datetime_select :end_time %>
+        </div>
 
+        <!-- <button class="create-trip">Create my trip</button> -->
+        <%= f.submit 'Create my trip', class: 'createtrip' %>
       </div>
-    </div>
+    <% end %>
+  </div>
 
-
-  </body>
-  </html>
+  <!-- FOOTER -->
+  <%= render 'foot' %>
+</div>
