@@ -1,111 +1,112 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
 
 
 
 
 
- /*-webkit---------------------HEADER: ;*/
- /*-moz---------------------HEADER: ;*/
- /*-ms---------------------HEADER: ;*/
- /*-o---------------------HEADER: ;*/
- /*--------------------HEADER: ;*/
+/*-webkit---------------------HEADER: ;*/
+/*-moz---------------------HEADER: ;*/
+/*-ms---------------------HEADER: ;*/
+/*-o---------------------HEADER: ;*/
+/*--------------------HEADER: ;*/
 
- .headerRow {
-   background-color: #black;
-   height: 35px;
- }
-
-
- .headerRow .words {
-   width: 150px;
-   height: 100%;
-   float: right;
-   display: inline-flex;
-   flex-flow: row;
-   justify-content: space-between;
-   padding-right: 30px;
- }
-
- .headerRow .words a {
-   text-decoration: none;
-   text-transform: uppercase;
-   color: #a5a5a6;
-   font-size: 11px;
-   line-height: 35px;
-   &:hover {
-     background-color: rgba(33,51,159,1);
-   }
- }
-
- .words {
-   color:  #a5a5a6;
- }
+.headerRow {
+  background-color: #black;
+  height: 35px;
+}
 
 
+.headerRow .words {
+  width: 175px;
+  height: 100%;
+  float: right;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-right: 30px;
+}
 
- .navTop {
-   height: 70px;
-   background-color: #black;
- }
+.headerRow .words a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a5a5a6;
+  font-size: 11px;
+  line-height: 35px;
+  &:hover {
+    background-color: rgba(33,51,159,1);
+  }
+}
 
- .navTop .words2 {
-   width: 100%;
-   margin: 0 auto;
-   display: inline-flex;
-   flex-flow: row;
-   justify-content: center;
-   border-top: solid .05px rgba(135,135,135,0.3);
-   border-bottom:  solid .05px rgba(135,135,135,0.1);
- }
-
- .navTop .words2 a {
-   color: #a5a5a6;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 14px;
-   line-height: 70px;
-   padding: 0 45px 0 45px;
-   &:hover {
-     background-color: rgba(33,51,159,1);
-   }
- }
-
- #logo {
-   float: left;
-   background-image: url('Travelize_Logo.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   height: 70px;
-   width: -5px;
-   position: relative;
-   margin-left: -420;
- }
+.words {
+  color:  #a5a5a6;
+}
 
 
 
+.navTop {
+  height: 70px;
+  background-color: #black;
+  display: flex;
+}
 
- @font-face{
-   font-family:'Brandon Grotesque';
-   src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
-   font-weight:normal;font-style:normal;
- }
+.navTop .words2 {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  border-top: solid .05px rgba(135,135,135,0.3);
+  border-bottom:  solid .05px rgba(135,135,135,0.1);
+}
 
- @font-face{
-   font-family:'Brandon Grotesque Bold';
-   src:url("./assets/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
-   font-weight:bold;font-style:normal;
- }
+.navTop .words2 a {
+  color: #a5a5a6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 70px;
+  padding: 0 45px 0 45px;
+  &:hover {
+    background-color: rgba(33,51,159,1);
+  }
+}
+
+#logo {
+  background-image: url('Travelize_Logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 18px;
+  width: 90px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+
+
+
+@font-face{
+  font-family:'Brandon Grotesque';
+  src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
+  font-weight:normal;font-style:normal;
+}
+
+@font-face{
+  font-family:'Brandon Grotesque Bold';
+  src:url("./assets/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
+  font-weight:bold;font-style:normal;
+}
