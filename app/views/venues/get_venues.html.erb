@@ -2,7 +2,17 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<!-- ACTIVATE JQUERY -->
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+crossorigin="anonymous"></script>
 
 
 <div class="maincontainer">
@@ -12,6 +22,7 @@
   <!-- MAIN PAGE -->
   <div class="maindiv">
     <%= form_for @trip do |f| %>
+<<<<<<< HEAD
       <div class="results">
         <% unless @response.blank? %>
           <% @response.businesses.each do |bus| %>
@@ -62,7 +73,58 @@
       <% end %>
     </div> <!--end of createtrip -->
   </div>
+=======
+    <div class="results">
+      <% unless @response.blank? %>
+      <% @response.businesses.each do |bus| %>
+      <%= f.fields_for :venues do |venues_f| %>
+      <ul class="venues">
+        <!-- <li><input type="checkbox" class="venue-check"></li> -->
+        <li>
+          <%= venues_f.check_box :enable, class: 'venue-check' %>
+          <%= venues_f.hidden_field :name, value: bus.name %>
+          <%= venues_f.hidden_field :address, value: bus.location.display_address.join("\n") %>
+        </li>
+        <li class="image"><%= image_tag bus.image_url %></li>
+        <li><span class="bus-name"><%= bus.name %></span><br>
+          <p><%= simple_format bus.location.display_address.join("\n") %>
+            <%= bus.display_phone %><br>
+            <%= link_to 'Website' , ""%>
+          </p>
+        </li>
+        <!-- <li><p>Rating</p><%= bus.rating %></li> -->
+        <li><p>Rating:</p><%= image_tag bus.rating_img_url %></li>
+      </ul>
+      <% end %>
+      <% end %>
+      <% end %>
+    </div>
+    <div class="savetrip">
+      <div class="trip-button">
+        <div class="field-title">
+          <%= f.label :title %>
+          <%= f.text_field :title , class: 'title-venues', placeholder: "Ex: West Coast"%>
+        </div>
+      </div>
 
-  <!-- FOOTER -->
-  <%= render 'foot' %>
-</div>
+      <div class="field-dates">
+        <div class="field">
+          <%= f.label :start_time , class: 'startTime'%> <br>
+          <%= f.date_select :start_time %>
+        </div>
+
+        <div class="field">
+          <%= f.label :end_time, class: 'endTime' %> <br>
+          <%= f.date_select :end_time %>
+        </div>
+      </div>
+      <!-- <button class="create-trip">Create my trip</button> -->
+>>>>>>> fix
+
+      <%= f.submit 'Create my trip', class: 'createtrip-venues' %>
+      <% end %>
+    </div> <!--end of createtrip -->
+
+    <!-- FOOTER -->
+    <%= render 'foot' %>
+  </div>

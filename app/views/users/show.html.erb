@@ -1,7 +1,12 @@
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <!-- ACTIVATE JQUERY -->
 <!-- ACTIVATE JQUERY -->
 <!-- ACTIVATE JQUERY -->
@@ -24,6 +29,7 @@ crossorigin="anonymous"></script>
 
 
     <div class="main2">
+        <span class="mytrips">My trips</span>
       <div class="userInfo">
 
         <p class="userName">
@@ -40,47 +46,29 @@ crossorigin="anonymous"></script>
           <%= @user.email %>
         </p>
 
-        <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary" %> |
+        <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary first-button" %> |
         <%= link_to 'Back', users_path,class: "btn btn-primary"%>
 
 
 
         <div class="tripContainer">
+          <div class="triplist">
           <tbody>
                <% @user.trips.each do |trip| %>
-                 <tr class="trips">
-                   <td><%= trip.title%></td>
+                 <tr class="trips"><br>
+                   <td><%= link_to trip.title, trip_path(trip)%></td><br>
                  </tr>
                <% end %>
            </tbody>
+           </div>
           <div class="trip-button">
-            <label class="createtrip">Create my trip</label>
+            <td><%= link_to 'Create New Trip', root_path, class: "user-trip btn btn-primary"%></td><br>
+
           </div>
         </div>
 
-
-
-
-        <button onclick="myFunction()">Print this page</button>
-
       </div>
-
-      <!-- PRINT BUTTON# -->
-      <!-- PRINT BUTTON# -->
-      <!-- PRINT BUTTON# -->
-      <!-- PRINT BUTTON# -->
-
-      <!-- PRINT SCRIPT -->
-      <!-- PRINT SCRIPT -->
-      <!-- PRINT SCRIPT -->
-      <!-- PRINT SCRIPT -->
-      <script>
-      function myFunction() {
-        window.print();
-      }
-      </script>
     </div>
-
     <!-- FOOTER  -->
     <!-- FOOTER -->
     <!-- FOOTER -->

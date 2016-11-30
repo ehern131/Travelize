@@ -54,7 +54,7 @@ body {
   border-bottom: 1px solid #b5b5b5;
   padding-top: 30px;
   padding-bottom: 100px;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.7);
   color: #505151;
   width: 675px;
   margin: 0 auto;
@@ -132,7 +132,7 @@ input[type=checkbox]{
 // -ms-----------------------CREATE TRIP BUTTON : ;
 // -o-----------------------CREATE TRIP BUTTON : ;
 // ----------------------CREATE TRIP BUTTON : ;
-.createtrip {
+.createtrip-venues {
   background: #0272bd;
   background-image: -webkit-linear-gradient(top, #0272bd, #60acdb);
   background-image: -moz-linear-gradient(top, #0272bd, #60acdb);
@@ -157,7 +157,7 @@ input[type=checkbox]{
 
 }
 
-.createtrip:hover {
+.createtrip-venues:hover {
   background: #3cb0fd;
   background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
   background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
