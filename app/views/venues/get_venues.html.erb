@@ -37,26 +37,30 @@
           <% end %>
         <% end %>
       </div>
-      <div class="trip-button">
-        <div class="field">
-          <%= f.label :title %>
-          <%= f.text_field :title %>
-        </div>
+        <div class="savetrip">
+          <div class="trip-button">
+            <div class="field-title">
+              <%= f.label :title %>
+              <%= f.text_field :title , class: 'title-venues', placeholder: "Ex: West Coast"%>
+            </div>
+          </div>
 
-        <div class="field">
-          <%= f.label :start_time %>
-          <%= f.datetime_select :start_time %>
-        </div>
+            <div class="field-dates">
+              <div class="field">
+                <%= f.label :start_time , class: 'startTime'%> <br>
+                <%= f.date_select :start_time %>
+              </div>
 
-        <div class="field">
-          <%= f.label :end_time %>
-          <%= f.datetime_select :end_time %>
-        </div>
-
+              <div class="field">
+                <%= f.label :end_time, class: 'endTime' %> <br>
+                <%= f.date_select :end_time %>
+              </div>
+            </div>
         <!-- <button class="create-trip">Create my trip</button> -->
-        <%= f.submit 'Create my trip', class: 'createtrip' %>
-      </div>
-    <% end %>
+
+          <%= f.submit 'Create my trip', class: 'createtrip' %>
+      <% end %>
+    </div> <!--end of createtrip -->
   </div>
 
   <!-- FOOTER -->
