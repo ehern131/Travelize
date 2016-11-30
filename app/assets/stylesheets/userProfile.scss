@@ -149,6 +149,8 @@ h1 {
   }
 }
 
+
+
 .userName {
   padding-left: 40px;
   padding-top: 45px;
@@ -172,7 +174,28 @@ h1 {
   background-color: rgba(255,255,255,.9);
 }
 
+.tripContainer {
+  background-color: lightblue;
+  width: 590px;
+  height: 500px;
+  float: right;
+  margin: 40px 40px 0 0;
+  display: flex;
 
+  position: relative;
+  top: -320px;
+}
+
+.trips {
+  flex-direction: column;
+}
+
+
+.createtrip {
+  position: relative;
+  right: 440px;
+  top: 140px;
+}
 
 @font-face{
   font-family:'Brandon Grotesque';

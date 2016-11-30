@@ -43,10 +43,23 @@ crossorigin="anonymous"></script>
         <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary" %> |
         <%= link_to 'Back', users_path,class: "btn btn-primary"%>
 
-        <div class="trip-button">
-          <label class="createtrip">Create my trip</label>
+
+
+        <div class="tripContainer">
+          <tbody>
+               <% @user.trips.each do |trip| %>
+                 <tr class="trips">
+                   <td><%= trip.title%></td>
+                 </tr>
+               <% end %>
+           </tbody>
+          <div class="trip-button">
+            <label class="createtrip">Create my trip</label>
+          </div>
         </div>
-        <% @user.trips %>
+
+
+
 
         <button onclick="myFunction()">Print this page</button>
 
