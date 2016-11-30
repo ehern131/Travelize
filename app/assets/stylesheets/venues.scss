@@ -92,10 +92,7 @@ body {
   border-top-left-radius: 6px;
 }
 
-.venues:last-child {
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
+
 
 
 .phone {
@@ -143,7 +140,7 @@ input[type=checkbox]{
   background-image: -o-linear-gradient(top, #0272bd, #60acdb);
   background-image: linear-gradient(to bottom, #0272bd, #60acdb);
 
-  border-radius: 25px;
+  border-radius: 10px;
   letter-spacing: .15em;
   color: #ffffff;
   font-size: 23px;
@@ -152,7 +149,11 @@ input[type=checkbox]{
   text-align: center;
   font-weight:100;
   text-transform: uppercase;
-  box-shadow: 2px 2px 10px #000;
+
+  display: flex;
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
 
 }
 
@@ -171,8 +172,48 @@ input[type=checkbox]{
   justify-content:center;
   align-items:center;
   margin: 30px 0 30px 15px;
+  margin-left: 104px;
 
-  input {
-    color: black;
-  }
+}
+
+
+.savetrip {
+  background-color: rgba(255,255,255,.9);
+  width: 676px;
+  padding: 10px 10px 40px 10px;
+  position: relative;
+  left: 13px;
+  margin: 0 auto;
+  color: #5F5F5F;
+
+}
+
+.field-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+
+}
+
+.field-title {
+  display: block;
+  width: 300px;
+  font-size: 1.5em;
+  float: right;
+
+}
+
+.title-venues {
+  background-color: rgba(255,255,255,.2);
+  border: none;
+  width: 170px;
+}
+
+.startTime {
+  padding-bottom: 10px;
+}
+
+.endTime {
+  padding-bottom: 10px;
 }

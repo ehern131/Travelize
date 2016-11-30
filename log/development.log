@@ -1463,3 +1463,2334 @@ Processing by VenuesController#get_venues as HTML
 Completed 200 OK in 364ms (Views: 277.0ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-11-29 14:21:06 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (44.6ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (1049.0ms)
+Completed 200 OK in 1183ms (Views: 1167.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 14:29:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nwcpUEyHO1/m7+c/USj5c7bax39jCnk5AV48BZU0PASggC7O9UaKm3KP2lH8GEOZojRufGfpA+QcvdOqJs9MpA==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (22.6ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (87.9ms)
+Completed 200 OK in 1843ms (Views: 403.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:27:06 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (38.9ms)
+  Rendered users/_foot.html.erb (1.6ms)
+  Rendered users/welcome.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 433ms (Views: 399.6ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:27:33 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6L8ouw1vdrcIo2Sn12fEFJLCOVkmOzb/At9pmdfN+cEJfs8VfQMHkhCsPwybSX6RqWh5mB7lgbh6JIJ1KRHRw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 1167ms (Views: 104.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:29:36 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6L8ouw1vdrcIo2Sn12fEFJLCOVkmOzb/At9pmdfN+cEJfs8VfQMHkhCsPwybSX6RqWh5mB7lgbh6JIJ1KRHRw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.8ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 1382ms (Views: 251.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:31:08 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6L8ouw1vdrcIo2Sn12fEFJLCOVkmOzb/At9pmdfN+cEJfs8VfQMHkhCsPwybSX6RqWh5mB7lgbh6JIJ1KRHRw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.2ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 933ms (Views: 130.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:31:38 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6L8ouw1vdrcIo2Sn12fEFJLCOVkmOzb/At9pmdfN+cEJfs8VfQMHkhCsPwybSX6RqWh5mB7lgbh6JIJ1KRHRw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 1015ms (Views: 156.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:32:03 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6L8ouw1vdrcIo2Sn12fEFJLCOVkmOzb/At9pmdfN+cEJfs8VfQMHkhCsPwybSX6RqWh5mB7lgbh6JIJ1KRHRw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.6ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (82.8ms)
+Completed 200 OK in 1065ms (Views: 205.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:32:17 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.1ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 135ms (Views: 129.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:32:22 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sgXkgQjQVV4BA7UXRDkvmtjGb7eUwYWa2GGNtUhEeYCNguMfsRHkmpVjiHnpCZVwzCjGtJAi/0fFgmIa+78JIA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.5ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (66.0ms)
+Completed 200 OK in 1397ms (Views: 108.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:33:04 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.7ms)
+  Rendered users/_foot.html.erb (2.6ms)
+  Rendered users/welcome.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 162ms (Views: 158.1ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:33:06 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qmk1ZT01nDO5S1OQhktn+FygX6hQ4jW1qLDcOWoXJDh97jL7hPQt9y0rbv4re90SSE72q1QBT2i1UzOW2exUmA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (2.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (37.2ms)
+Completed 200 OK in 1265ms (Views: 93.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:33:46 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (14.6ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 250ms (Views: 228.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:33:48 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1hYtx9xwI0z1uU/SlfWIlTSwIsT8CHHYOK/H5uzZLt7pkSpZZbGSiGHZcrw4xTJ/IF6Lx/jrCwUlTChJXyJefg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.6ms)
+  Rendered venues/_foot.html.erb (0.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (58.7ms)
+Completed 200 OK in 1120ms (Views: 122.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:34:02 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.1ms)
+  Rendered users/_foot.html.erb (1.0ms)
+  Rendered users/welcome.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 164ms (Views: 161.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:34:04 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"We0z7H9H1FJpRcXbdG//mPdb8iyuQKqu5n4BEa2mDBhmajRyxoZllv0l+LXZX0Vy47VbL6qj0HP7ne6+Hl18uA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.9ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 1049ms (Views: 126.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:35:02 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (17.1ms)
+  Rendered users/_foot.html.erb (2.0ms)
+  Rendered users/welcome.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 289ms (Views: 275.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:35:05 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ci6VHrqLZU794AVZLdy5XKxNQ7qsFsvglow65WjDLcVNqZKAA0rUimmAODeA7AO2uKPquaj1sT2Lb9VK2zhdZQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.4ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (93.5ms)
+Completed 200 OK in 1452ms (Views: 147.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:35:52 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (21.6ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 293ms (Views: 276.1ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:35:54 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p9H/d2uOoRWJWlRkCgei3COOKuf1UjUCgU1CS+JAL0yYVvjp0k8Q0R06aQqnNxg2N2CD5PGxT9+crq3kUbtf7A==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.5ms)
+  Rendered venues/_foot.html.erb (1.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 973ms (Views: 125.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:36:04 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (6.0ms)
+  Rendered users/_foot.html.erb (1.2ms)
+  Rendered users/welcome.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 166ms (Views: 161.8ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:36:06 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"owIbh71GroZTnJUs2KX1EqAibAgtauXNInVbx0Q36SechRwZBIcfQsf8qEJ1lU/4tMzFCymJnxA/lrRo98yZhw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.7ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (62.6ms)
+Completed 200 OK in 835ms (Views: 123.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:37:02 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.3ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:37:04 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FtD7pPBnCKIYXAszkNKletZwQB8DR068EjNp7tdu2NgpV/w6Saa5Zow8Nl094h+Qwp7pHAekNGEP0IZBZJWoeA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (2.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 877ms (Views: 87.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:37:16 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.7ms)
+  Rendered users/_foot.html.erb (1.1ms)
+  Rendered users/welcome.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 159ms (Views: 154.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:37:19 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hyjnLRKYF+yNI2mKGElag81CfGxcZZ91Ivep7lqtKem4r+Czq1mmKBlDVOS1eeBp2azVb1iG5ag/FEZB6VZZSQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 1074ms (Views: 86.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:37:29 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.0ms)
+  Rendered users/_foot.html.erb (0.8ms)
+  Rendered users/welcome.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 152ms (Views: 148.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:37:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHbKT6jlwcTtCXN65UYikuVZOkmWDYtRQ8sQc1Ek3am/8c3RESRwAHlpThRIdph48beTSpLu8YxeKP/c4t+tCQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (1.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 1580ms (Views: 100.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:38:47 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (16.5ms)
+  Rendered users/_foot.html.erb (1.4ms)
+  Rendered users/welcome.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 333ms (Views: 319.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:38:50 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9XRwRcVT7msBtJw5DN8LOAYuNOvNza+dDZLpo6mrdzbK83fbfJJfr5XUoVeh77HSEsCd6Mku1UAQcQYMGlAHlg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.2ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 1323ms (Views: 141.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:39:02 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.4ms)
+  Rendered users/_foot.html.erb (2.6ms)
+  Rendered users/welcome.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 171ms (Views: 164.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:39:04 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IMHsm4LzJBwd5dKVGjag7+NJ1Zo1/GBvVxB0H9Fj1msfRusFOzKV2ImF7/u3BhoF96d8mTEfGrJK85uwYpimyw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (1.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 966ms (Views: 169.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:39:28 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.6ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 231ms (Views: 227.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:39:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYlV6hlXEIP6vP6XFBAyzeefhNMhs9+q7BA/m1XAfdYyDlJ0oJahR27cw/m5IIgn83Et0CVQpXfx89A05jsNdg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 960ms (Views: 107.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:39:49 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.7ms)
+  Rendered users/_foot.html.erb (1.4ms)
+  Rendered users/welcome.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 85ms (Views: 81.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:39:51 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8MF3QgCFFBQD7XkOmF/ItfeapvhSxVltHj9Mr3AJdmARAJDscOllMRviIqXUcXIwzDDmOWob7ipmxKdDjtVeQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.3ms)
+  Rendered venues/_foot.html.erb (1.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 1150ms (Views: 115.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:40:19 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.7ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:40:22 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WRexzmx6ZUoK17RMUvqirzuGzJ4KG79bpKH3fyxlb35mkLZQ1bvUjp63iSL/yhhFL2hlnQ74xYa5QhjQn54f3g==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.6ms)
+Completed 200 OK in 779ms (Views: 91.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:40:48 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.7ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 156ms (Views: 153.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:40:50 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Umfdeg7UjpvbQ/dWLtN0ivzVc3F/zK6jfSw8vqtwSqlt4NrktxU/X08jyjiD485g6Dvacnsv1H5gz9MRGIs6CQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.1ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (78.1ms)
+Completed 200 OK in 922ms (Views: 150.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:41:11 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.0ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 179ms (Views: 176.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:41:13 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2hGSddra+RJMufDXlFN7sQG65C4Z0cA/ztXW1zG5fOnllpXrYxtI1tjZzbk5Y8FbFVRNLR0yuuLTNjl4gkIMSQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.6ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 1059ms (Views: 97.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-29 15:42:11 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:TripsController> at /Users/monicaaguinaga/Desktop/wyncode/Travelize/app/controllers/trips_controller.rb:3)
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1UTLXtNcUMMXg0K59Vt+DAvWd2g5rPKiiR9uOthupqDqw8zAap3hB4Pjf9dYa8TmHzjeaz1PiH+U/IGVa5XWAA==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"Pinecrest Gardens", "address"=>"5855 SW 111th St\r\nMiami, FL 33156"}, "1"=>{"enable"=>"1", "name"=>"AD Barnes Park", "address"=>"3401 SW 72nd Ave\r\nMiami, FL 33155"}, "2"=>{"enable"=>"0", "name"=>"Tropical Park", "address"=>"7900 SW 40th St\r\nMiami, FL 33155"}, "3"=>{"enable"=>"0", "name"=>"Everglades Nature Tours", "address"=>"14300 SW 8th St\r\nMiami, FL 33184"}, "4"=>{"enable"=>"0", "name"=>"Enchanted Forest Elaine Gordon Park", "address"=>"1725 NE 135th St\r\nMiami, FL 33181"}, "5"=>{"enable"=>"0", "name"=>"Blanche Park", "address"=>"3070 Virginia St\r\nCoconut Grove\r\nMiami, FL 33133"}, "6"=>{"enable"=>"0", "name"=>"The Barnacle Historic State Park", "address"=>"3485 Main Hwy\r\nMiami, FL 33133"}, "7"=>{"enable"=>"0", "name"=>"Pilathon", "address"=>"2700 N Miami Ave\r\n6 FL\r\nWynwood\r\nMiami, FL 33127"}, "8"=>{"enable"=>"0", "name"=>"Shark Valley Tram Tours", "address"=>"36000 SW 8th St\r\nMiami, FL 33194"}, "9"=>{"enable"=>"0", "name"=>"David T. Kennedy Park", "address"=>"2600 S Bayshore Dr\r\nCoconut Grove\r\nMiami, FL 33133"}, "10"=>{"enable"=>"0", "name"=>"Bill Baggs Cape Florida State Park", "address"=>"1200 S Crandon Blvd\r\nKey Biscayne, FL 33149"}, "11"=>{"enable"=>"1", "name"=>"Vizcaya Museum & Gardens", "address"=>"3251 S Miami Ave\r\nCoconut Grove\r\nMiami, FL 33129"}, "12"=>{"enable"=>"0", "name"=>"Kendall Indian Hammocks Park", "address"=>"11395 SW 79th St\r\nMiami, FL 33173"}, "13"=>{"enable"=>"0", "name"=>"Virginia Key Outdoor Center", "address"=>"3801 Rickenbacker Causeway\r\nMiami, FL 33149"}, "14"=>{"enable"=>"0", "name"=>"RedBike Studios", "address"=>"1399 SW 1st Ave\r\nBrickell\r\nMiami, FL 33130"}, "15"=>{"enable"=>"0", "name"=>"Matheson Hammock Park", "address"=>"9610 Old Cutler Rd\r\nCoral Gables, FL 33156"}, "16"=>{"enable"=>"0", "name"=>"Zoo Miami", "address"=>"12400 SW 152nd St\r\nMiami, FL 33177"}, "17"=>{"enable"=>"0", "name"=>"Bayfront Park", "address"=>"301 Biscayne Blvd\r\nDowntown\r\nMiami, FL 33131"}, "18"=>{"enable"=>"0", "name"=>"Alice C. Wainwright Park", "address"=>"2845 Brickell Ave\r\nCoconut Grove\r\nMiami, FL 33129"}, "19"=>{"enable"=>"0", "name"=>"Dharma Yoga Studio", "address"=>"3170 Commodore Plz\r\nCoconut Grove\r\nMiami, FL 33133"}}, "title"=>"Miami trip", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"30", "start_time(4i)"=>"20", "start_time(5i)"=>"41", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"31", "end_time(4i)"=>"20", "end_time(5i)"=>"41"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Miami trip"], ["user_id", 1], ["start_time", 2016-11-30 20:41:00 UTC], ["end_time", 2016-12-01 20:41:00 UTC], ["created_at", 2016-11-29 20:42:11 UTC], ["updated_at", 2016-11-29 20:42:11 UTC]]
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "AD Barnes Park"], ["address", "3401 SW 72nd Ave\r\nMiami, FL 33155"], ["created_at", 2016-11-29 20:42:11 UTC], ["updated_at", 2016-11-29 20:42:11 UTC]]
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "venue_trip_links" ("trip_id", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["trip_id", 17], ["venue_id", 194], ["created_at", 2016-11-29 20:42:11 UTC], ["updated_at", 2016-11-29 20:42:11 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "venues" ("name", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Vizcaya Museum & Gardens"], ["address", "3251 S Miami Ave\r\nCoconut Grove\r\nMiami, FL 33129"], ["created_at", 2016-11-29 20:42:11 UTC], ["updated_at", 2016-11-29 20:42:11 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "venue_trip_links" ("trip_id", "venue_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["trip_id", 17], ["venue_id", 195], ["created_at", 2016-11-29 20:42:11 UTC], ["updated_at", 2016-11-29 20:42:11 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/17
+Completed 302 Found in 133ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/trips/17" for 127.0.0.1 at 2016-11-29 15:42:11 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (1.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 17]]
+  Rendered trips/show.html.erb within layouts/application (54.7ms)
+Completed 200 OK in 123ms (Views: 111.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 15:42:15 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 156ms (Views: 147.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/trips/17" for 127.0.0.1 at 2016-11-29 15:42:22 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (2.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 17]]
+  Rendered trips/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 193ms (Views: 183.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 15:42:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.2ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 79ms (Views: 74.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:42:32 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.3ms)
+  Rendered users/_foot.html.erb (0.6ms)
+  Rendered users/welcome.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 68ms (Views: 64.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:42:34 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KCMUc0uHMZCOK4rl4ary+aDw2pS+kMHs+Dfh7KhDEXQXpBPt8kaAVBpLt4tMmkgTtB5zl7pzuzHl1A5DG7hh1A==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 1126ms (Views: 114.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:43:40 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.3ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 211ms (Views: 206.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:43:42 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lGyYISGIBMZRpytqm/2pi8Mxbva//s/Utb4lAkP649er65+/mEm1AsXHFgQ2zRNh19/H9bsdtQmoXcqt8AGTdw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (1.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 1142ms (Views: 108.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:44:03 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.1ms)
+  Rendered users/_foot.html.erb (2.7ms)
+  Rendered users/welcome.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 190ms (Views: 185.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:44:06 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nn9nhI5GV59qs48/0RUA/hF/9vwGtI18Fgs0ZGLQecqh+GAaN4fmW/7TslF8JboUBZFf/wJX96EL6NvL0SsJag==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 1046ms (Views: 145.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:44:22 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.5ms)
+  Rendered users/_foot.html.erb (1.8ms)
+  Rendered users/welcome.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 212ms (Views: 205.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:44:25 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ny+ZMq5dpBVFLAN15BWmMdsnx0R2IlrCQiE4sEcRtCugqJ6sF5wV0dFMPhtJJRzbz8luR3LBIB9fwtcf9OrEiw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.7ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 870ms (Views: 120.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:46:43 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.7ms)
+  Rendered users/_foot.html.erb (0.9ms)
+  Rendered users/welcome.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 165ms (Views: 158.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:46:45 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/7CVR5ZgaE6CmOSLdGQi+SjiK98xgRvtLM8gjXuIJQ/AN5LZL6HZihb42eXZVJgTPAyC3DViYTAxLM8iyHNVrw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (61.8ms)
+Completed 200 OK in 976ms (Views: 134.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:47:08 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (5.3ms)
+  Rendered users/_foot.html.erb (1.6ms)
+  Rendered users/welcome.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 167ms (Views: 161.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:47:20 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (15.8ms)
+  Rendered users/_foot.html.erb (0.9ms)
+  Rendered users/welcome.html.erb within layouts/application (42.5ms)
+Completed 200 OK in 201ms (Views: 184.8ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:47:23 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k901ZiulFR+C6KAWNrIOh5tP4fDQ+0KFqmJ6c/2Zv1WsWjL4kmSk2xaInXibgrRtj6FI89QYOFi3gZXcTmLP9Q==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.8ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (185.8ms)
+Completed 200 OK in 967ms (Views: 253.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:47:44 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.8ms)
+  Rendered users/_foot.html.erb (0.9ms)
+  Rendered users/welcome.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 159ms (Views: 155.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:47:47 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X7vkFJMnSqLSawEH0g2Y0VBCxayW1vnH997g9xSAeV1gPOOKKub7ZkYLPGl/PSI7RKxsr5I1gxrqPQ9Yp3sJ/Q==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (62.5ms)
+Completed 200 OK in 805ms (Views: 123.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:48:03 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.1ms)
+  Rendered users/_foot.html.erb (0.9ms)
+  Rendered users/welcome.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 165ms (Views: 162.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:48:08 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nEMwaQGCl94t/+p1zOqhctdSzBbF4Wg8ltPdbh357SWjxDf3uEMmGrmf1xth2huYw7xlFcECEuGLMDLBrgKdhQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (76.6ms)
+Completed 200 OK in 970ms (Views: 150.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:48:26 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.1ms)
+  Rendered users/_foot.html.erb (1.5ms)
+  Rendered users/welcome.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 209ms (Views: 201.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:48:29 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qigiyrlMjF2JMQAM91VhU/Y0FObG80VL93tNNQdFjriVryVUAI09mR1RPWJaZdu54tq95cIQP5bqmKKatL7+GA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.0ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 1037ms (Views: 89.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:48:44 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.2ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:48:46 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qvw+RA7v6056F2U/02GwqE9AdSp2ATFj82uO+HtPA6p9eznaty5aiu53WFF+UQpCW67cKXLiS77uiGFXyLRzCg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.6ms)
+  Rendered venues/_foot.html.erb (8.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 1134ms (Views: 113.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:49:06 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.6ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:49:09 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zud/8MI82RSsipuCWTKdYlszApATkvABVpfHEfiuqzPxYHhue/1o0Djqpuz0AieIT92rkxdxitxLdCi+S1Xbkw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 804ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:57:55 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (25.3ms)
+  Rendered users/_foot.html.erb (7.3ms)
+  Rendered users/welcome.html.erb within layouts/application (83.0ms)
+Completed 200 OK in 408ms (Views: 372.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:57:58 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JwjVSrNa23iDLcUtlY1ajYq+EQkLZh2TGnUIkBH8LvwYj9LUCptqvBdN+EM4veBnnlC4Cg+FZ04Hluc/ogdeXA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 890ms (Views: 124.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 15:58:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (9.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 254ms (Views: 243.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:58:21 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (5.0ms)
+  Rendered users/_foot.html.erb (1.1ms)
+  Rendered users/welcome.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 119ms (Views: 113.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:58:22 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IlAOXuV64T6FYgZstRUPPtaA/O2yPMwXkbmVBHD7vqYd1wnAXLtQ+hECOwIYJbXUwm5V7rbftsqMWnqrwwDOBg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (53.1ms)
+Completed 200 OK in 1343ms (Views: 119.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:58:35 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.4ms)
+  Rendered users/_foot.html.erb (1.0ms)
+  Rendered users/welcome.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 203ms (Views: 197.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:58:38 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KNjmgGHpwLZ23oEed1cQMVHX3jpIb2VJUNqHOH+h6uMXX+Ee2ChxcuK+vHDaZ6rbRTl3OUyMH5RNOWiXzFqaQw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (2.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 1442ms (Views: 124.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:58:50 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.9ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 149ms (Views: 146.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:58:52 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Omoh9EtQ7mnOzYvmIyPCwdUkNsxSrO1IeSKEeb4V42QF7SZq8pFfrVqttoiOE3grwcqfz1ZPl5VkwWvWDe6TxA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.1ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 933ms (Views: 110.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 15:59:28 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.6ms)
+  Rendered users/_foot.html.erb (1.0ms)
+  Rendered users/welcome.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 139ms (Views: 136.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 15:59:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sn72xcDYxoryuLFpOvvFuJqOFMO9+SBA8tn7riVgGBaN+fFbeRl3TmbYjAeXy39SjmC9wLkaWp3vOhQBlptotg==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.8ms)
+  Rendered venues/_foot.html.erb (1.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 991ms (Views: 89.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 16:47:45 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (70.0ms)
+  Rendered users/_foot.html.erb (3.1ms)
+  Rendered users/welcome.html.erb within layouts/application (189.3ms)
+Completed 200 OK in 583ms (Views: 512.2ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 16:50:22 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AYshsobhUNXuUwq+JW2CYIJPUIrY036uPA5FDylA9Bc+DCYsPyDhEXozN9CIXTiKlqH5idwwBHMh7aqgmruEtw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.4ms)
+  Rendered venues/_foot.html.erb (2.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 1552ms (Views: 153.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 16:54:59 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (23.7ms)
+  Rendered users/_foot.html.erb (0.7ms)
+  Rendered users/welcome.html.erb within layouts/application (58.3ms)
+Completed 200 OK in 278ms (Views: 251.8ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 16:55:02 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"juY38EvSvmuuFwsjHHFfSf/TzE4y3+n8Q74m0i6LbAuxYTBu8hMPrzp3Nk2xQeWj6z1lTTY8kyFeXcl9nXAcqw==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.0ms)
+  Rendered venues/_foot.html.erb (2.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (59.1ms)
+Completed 200 OK in 1107ms (Views: 120.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 16:58:48 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (10.0ms)
+  Rendered users/_foot.html.erb (1.1ms)
+  Rendered users/welcome.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 222ms (Views: 217.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 16:58:50 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ng/dvG8rvNaDz3zNzU0SID+6qZ0z+vRDEw4Vgf5BdDQJiNoi1uoNEhevQaNgfajKK1QAnjcZjp4O7fouTboElA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.8ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 2757ms (Views: 95.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 16:59:09 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (8.2ms)
+  Rendered users/_foot.html.erb (1.3ms)
+  Rendered users/welcome.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 205ms (Views: 196.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 16:59:11 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BJ6IdChR4eQmoc9A8T51rh+xc4CzQsEINLbIN17SL207GY/qkZBQILLB8i5cDs9EC1/ag7ehu9UpVSeY7SlfzQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 985ms (Views: 159.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 16:59:56 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (5.0ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 202ms (Views: 195.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 16:59:58 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k8bl34GYCnSsfAWtH+mmkfqTdaMhu8mUDQQ3F3+ST6GsQeJBOFm7sDgcOMOy2Rx77n3coCVYs0kQ59i4zGk/AQ==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.2ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 959ms (Views: 111.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 17:00:18 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.1ms)
+  Rendered users/_foot.html.erb (1.9ms)
+  Rendered users/welcome.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 148ms (Views: 144.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 17:00:20 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dp19VrbGV0WWEHCkMuB9NRzl4O98nxceBFeanEGRWkJJGnrIDwfmgQJwTcqf0MffCAtJ7Hh8bcMZtHUz8moq4g==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.7ms)
+  Rendered venues/_foot.html.erb (1.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 1229ms (Views: 92.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:00:35 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.6ms)
+  Rendered venues/_foot.html.erb (5.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 203ms (Views: 194.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 17:00:50 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (1.9ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 187ms (Views: 181.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 17:00:51 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z3x+CM4ZAYkPgAKoD8t4RTsfTVoPBdVr3iakvMbJubzw+3mWd9iwTZvgP8ai+8KvL/HkWQvmr7bDxUsTdTLJHA==", "location"=>"Miami", "interest"=>"Nature", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.4ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (63.3ms)
+Completed 200 OK in 1127ms (Views: 114.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:01:13 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.3ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 62ms (Views: 56.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:01:23 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (6.9ms)
+  Rendered venues/_foot.html.erb (1.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:01:34 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.8ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-29 17:02:28 -0500
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EAHKDK6sDMXGd2QUvOUgmnut5WS+JyvHLnmvKmSkZxUvhs2SF229AVIXWXoR1Zpwb0NMZ7rEURozmkCF118XtQ==", "trip"=>{"title"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"29", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"29"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", ""], ["user_id", 1], ["start_time", 2016-11-29 00:00:00 UTC], ["end_time", 2016-11-29 00:00:00 UTC], ["created_at", 2016-11-29 22:02:28 UTC], ["updated_at", 2016-11-29 22:02:28 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/18
+Completed 302 Found in 80ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2016-11-29 17:02:28 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (1.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 18]]
+  Rendered trips/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 84ms (Views: 74.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/trips/18/edit" for 127.0.0.1 at 2016-11-29 17:02:47 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/_form.html.erb (32.9ms)
+  Rendered trips/edit.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 177ms (Views: 169.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 17:03:07 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.5ms)
+  Rendered users/_foot.html.erb (0.7ms)
+  Rendered users/welcome.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 146ms (Views: 137.3ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 17:03:24 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pybGAmU5/GHhyaKHm/b4LTaqfArt8pIS9EzVZyO3XYCYocGc3PhNpXWpn+k2xkLHIkTVCekR6M/przrIkEwtIA==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.0ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (57.3ms)
+Completed 200 OK in 1387ms (Views: 110.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 17:10:34 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (5.7ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (155.3ms)
+Completed 200 OK in 397ms (Views: 355.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/trips/8/edit" for 127.0.0.1 at 2016-11-29 17:10:59 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTrip Load (7.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/_form.html.erb (78.4ms)
+  Rendered trips/edit.html.erb within layouts/application (96.7ms)
+Completed 200 OK in 384ms (Views: 354.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 17:11:09 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (1.8ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 136ms (Views: 127.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/trips/17/edit" for 127.0.0.1 at 2016-11-29 17:11:12 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mTrip Load (0.5ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/_form.html.erb (62.6ms)
+  Rendered trips/edit.html.erb within layouts/application (66.6ms)
+Completed 200 OK in 148ms (Views: 137.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 17:11:14 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (2.0ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 267ms (Views: 257.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/trips/18/edit" for 127.0.0.1 at 2016-11-29 17:11:16 -0500
+Processing by TripsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.1ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/edit.html.erb within layouts/application
+  Rendered trips/_form.html.erb (140.2ms)
+  Rendered trips/edit.html.erb within layouts/application (148.1ms)
+Completed 200 OK in 254ms (Views: 241.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 17:11:17 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 221ms (Views: 214.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trips/18" for 127.0.0.1 at 2016-11-29 17:11:18 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.2ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 18]]
+  Rendered trips/show.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 134ms (Views: 125.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/trips" for 127.0.0.1 at 2016-11-29 17:11:21 -0500
+Processing by TripsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/index.html.erb within layouts/application
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  Rendered trips/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 181ms (Views: 174.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 17:21:52 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (36.0ms)
+  Rendered users/_foot.html.erb (0.9ms)
+  Rendered users/welcome.html.erb within layouts/application (91.2ms)
+Completed 200 OK in 489ms (Views: 432.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 17:21:56 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7UEDq38MajQJKxNKx09B5/spC+m3I/on7nzKy/mlANnSxgQ1xs3b8J1LLiRqf/sN78ei6rPAgPrznyVkSl5weQ==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.9ms)
+  Rendered venues/_foot.html.erb (1.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 1158ms (Views: 101.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:22:08 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (0.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 220ms (Views: 211.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:22:16 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (7.5ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 180ms (Views: 171.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:22:35 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 191ms (Views: 180.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:25:11 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.9ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 205ms (Views: 194.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:25:52 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.7ms)
+  Rendered venues/_foot.html.erb (2.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 316ms (Views: 305.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:26:06 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.0ms)
+  Rendered venues/_foot.html.erb (2.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 209ms (Views: 201.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:28:50 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (8.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 346ms (Views: 315.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:29:46 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (12.1ms)
+  Rendered venues/_foot.html.erb (3.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (38.6ms)
+Completed 200 OK in 210ms (Views: 194.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:29:56 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (7.2ms)
+  Rendered venues/_foot.html.erb (5.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 268ms (Views: 259.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:30:13 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.3ms)
+  Rendered venues/_foot.html.erb (3.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 178ms (Views: 173.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:30:24 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.1ms)
+  Rendered venues/_foot.html.erb (2.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 178ms (Views: 170.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:30:31 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 151ms (Views: 145.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:30:40 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.1ms)
+  Rendered venues/_foot.html.erb (1.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 134ms (Views: 128.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:31:13 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (7.3ms)
+  Rendered venues/_foot.html.erb (1.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 182ms (Views: 166.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:31:27 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.8ms)
+  Rendered venues/_foot.html.erb (0.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 138ms (Views: 134.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:31:37 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.7ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 146ms (Views: 142.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:31:49 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 75ms (Views: 67.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 17:32:41 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (17.5ms)
+  Rendered users/_foot.html.erb (1.7ms)
+  Rendered users/welcome.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 191ms (Views: 170.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 17:32:43 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D7GiAdhiDTFs9RnKC25wVfcQzGHSCAQ1SQYrMlauJEcwNqWfYaO89fiVJKSmXsq/4/5lYtbrfuhU5cSd5VVU5w==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.4ms)
+  Rendered venues/_foot.html.erb (1.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 1894ms (Views: 136.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:34:45 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 360ms (Views: 353.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:34:56 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.2ms)
+  Rendered venues/_foot.html.erb (2.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 216ms (Views: 207.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:42:48 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.9ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 195ms (Views: 171.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:43:57 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (21.9ms)
+  Rendered venues/_foot.html.erb (0.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 273ms (Views: 246.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:45:34 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.8ms)
+  Rendered venues/_foot.html.erb (3.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 297ms (Views: 289.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:45:53 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (23.6ms)
+  Rendered venues/_foot.html.erb (0.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 761ms (Views: 749.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:51:07 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (22.0ms)
+  Rendered venues/_foot.html.erb (2.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (113.0ms)
+Completed 500 Internal Server Error in 486ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  width: 30%": expected ";", was ":"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:201
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118309193660'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (22.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (160.2ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:51:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (8.4ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 223ms (Views: 204.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:51:28 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 178ms (Views: 171.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:52:03 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 136ms (Views: 130.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:52:55 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.4ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 154ms (Views: 149.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:53:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 146ms (Views: 142.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:53:26 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.8ms)
+  Rendered venues/_foot.html.erb (1.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 139ms (Views: 135.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:54:12 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 146ms (Views: 141.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:54:40 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.5ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 163ms (Views: 157.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:57:02 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (10.0ms)
+  Rendered venues/_foot.html.erb (0.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (39.1ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...or: rgba(0,0,0,": expected function argument, was ",.9);"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:180
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118294826220'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.4ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:57:10 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.2ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 178ms (Views: 172.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 17:57:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 99ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:14:15 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (6.4ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 99ms (Views: 91.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:16:10 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (2.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 117ms (Views: 104.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 19:16:12 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.6ms)
+  Rendered users/_foot.html.erb (1.6ms)
+  Rendered users/welcome.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 91ms (Views: 83.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 19:16:15 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lu3NzgS+ZyWjw2WARGY6NMKF3FbT+1TFbG6ayIxve40RaspQvX/W4TejWO7pVoDe1mt1VdcYLhhxjXVnP5QLLQ==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.9ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (58.2ms)
+Completed 200 OK in 1789ms (Views: 118.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-11-29 19:17:28 -0500
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bdtFx3bq7iDMD9jYIX5ceU2VcAXD+AJ7Tkh2hyLkguBSXEJZzytf5Fhv5baMTuaTWXvZBscbeKZTq5kokR/yQA==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"Wynwood Brewing Company", "address"=>"565 NW 24th St\r\nWynwood\r\nMiami, FL 33127"}, "1"=>{"enable"=>"0", "name"=>"Lincoln's Beard Brewing", "address"=>"7360 SW 41st St\r\nMiami, FL 33155"}, "2"=>{"enable"=>"0", "name"=>"Biscayne Bay Brewing Company", "address"=>"8000 NW 25th St\r\nSte 500\r\nMiami, FL 33122"}, "3"=>{"enable"=>"0", "name"=>"J Wakefield Brewing", "address"=>"120 NW 24th St\r\nWynwood\r\nMiami, FL 33127"}, "4"=>{"enable"=>"0", "name"=>"Concrete Beach Brewery", "address"=>"325 NW 24 St\r\nWynwood\r\nMiami, FL 33127"}, "5"=>{"enable"=>"0", "name"=>"Titanic Brewery & Restaurant", "address"=>"5813 Ponce De Leon Blvd\r\nCoral Gables, FL 33146"}, "6"=>{"enable"=>"0", "name"=>"BJ's Restaurant & Brewhouse", "address"=>"8888 SW 136th St.\r\nMiami, FL 33176"}, "7"=>{"enable"=>"0", "name"=>"Sud Swap Monthly Event", "address"=>"Gramps Bar\r\n176 NW 24th St\r\nBay Point\r\nMiami, FL 33137"}, "8"=>{"enable"=>"0", "name"=>"Boxelder Craft Beer Market", "address"=>"2817 NW 2nd Ave\r\nWynwood\r\nMiami, FL 33127"}, "9"=>{"enable"=>"0", "name"=>"The Abbey Brewing Company", "address"=>"1115 16th St\r\nMiami Beach, FL 33139"}, "10"=>{"enable"=>"0", "name"=>"MIA Brewing Company", "address"=>"10400 NW 33rd St\r\nSte 150\r\nDoral, FL 33172"}, "11"=>{"enable"=>"0", "name"=>"The Hops Tour", "address"=>"89 NE 27 St\r\nSte 109\r\nWynwood\r\nMiami, FL 33137"}, "12"=>{"enable"=>"0", "name"=>"World Of Beer", "address"=>"9010 SW 72nd Pl\r\nMiami, FL 33156"}, "13"=>{"enable"=>"0", "name"=>"Wood Tavern", "address"=>"2531 NW 2nd Ave\r\nWynwood\r\nMiami, FL 33127"}, "14"=>{"enable"=>"0", "name"=>"World Of Beer", "address"=>"8525 Mills Dr\r\nMiami, FL 33183"}, "15"=>{"enable"=>"0", "name"=>"Tacos and Tattoos", "address"=>"10720 SW 113th Pl\r\nMiami, FL 33176"}, "16"=>{"enable"=>"0", "name"=>"The Mighty", "address"=>"2224 SW 22nd St\r\nSilver Bluff\r\nMiami, FL 33145"}, "17"=>{"enable"=>"0", "name"=>"World Of Beer", "address"=>"3252 NE 1st Ave\r\nSte 112\r\nMidtown\r\nMiami, FL 33137"}, "18"=>{"enable"=>"0", "name"=>"BJ's Restaurant & Brewhouse", "address"=>"1401 NW 107th Ave.\r\nDoral, FL 33172"}, "19"=>{"enable"=>"0", "name"=>"Sports Grill Bird Road", "address"=>"11481 SW 40th St\r\nMiami, FL 33165"}}, "title"=>"", "start_time(1i)"=>"2016", "start_time(2i)"=>"11", "start_time(3i)"=>"26", "end_time(1i)"=>"2016", "end_time(2i)"=>"11", "end_time(3i)"=>"30"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (2.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.3ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", ""], ["user_id", 1], ["start_time", 2016-11-26 00:00:00 UTC], ["end_time", 2016-11-30 00:00:00 UTC], ["created_at", 2016-11-30 00:17:28 UTC], ["updated_at", 2016-11-30 00:17:28 UTC]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/trips/19
+Completed 302 Found in 86ms (ActiveRecord: 13.4ms)
+
+
+Started GET "/trips/19" for 127.0.0.1 at 2016-11-29 19:17:28 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mTrip Load (2.9ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  [1m[36mVenue Load (0.8ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 19]]
+  Rendered trips/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 81ms (Views: 71.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:17:31 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 70ms (Views: 64.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:21:49 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (10.5ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (65.3ms)
+Completed 200 OK in 396ms (Views: 326.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:22:16 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.1ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 262ms (Views: 252.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:22:26 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (3.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  float: right": expected ";", was ":"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:205
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118294562100'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.0ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:22:40 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 163ms (Views: 156.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:23:03 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 148ms (Views: 137.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:33:27 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (14.9ms)
+  Rendered venues/_foot.html.erb (1.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (64.5ms)
+Completed 200 OK in 484ms (Views: 348.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 19:35:57 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (6.9ms)
+  Rendered users/_foot.html.erb (1.7ms)
+  Rendered users/welcome.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 268ms (Views: 255.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 19:36:00 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2KksEGikqqZZyOVvV5tV3EzSOROPVMja25umsMAwnf7nLiuO0WUbYs2o2AH6q+82WDyQEIu3sgfGeEkfc8vtXg==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.1ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 1259ms (Views: 115.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:44:26 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (9.2ms)
+  Rendered venues/_foot.html.erb (4.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 367ms (Views: 322.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 19:44:30 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.7ms)
+  Rendered users/_foot.html.erb (2.3ms)
+  Rendered users/welcome.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 84ms (Views: 79.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 19:44:32 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I1j23qDpSvlUhx2FJKuDDlknzVJETulEWnj+TW9Tpt8c3/FAGSj7PcDnIOuJmznkTclkUUCtk5lHmxHi3KjWfw==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.0ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (61.6ms)
+Completed 200 OK in 1435ms (Views: 133.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:45:05 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.8ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 97ms (Views: 90.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 19:46:05 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (4.0ms)
+  Rendered users/_foot.html.erb (1.1ms)
+  Rendered users/welcome.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 170ms (Views: 166.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 19:46:07 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZMZ9eYhIx4A4bg4wGASAESA7rkfUQa8wl7YXHBic76RbQXrnMYl2RKwOM161NDr7NNUHRNCi1e2KVfizq2efBA==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.9ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 1131ms (Views: 120.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:01 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (6.2ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 144ms (Views: 139.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:21 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.7ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:31 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.6ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 336ms (Views: 328.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:44 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.6ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:207
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118294610640'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.2ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:46 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.6ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:207
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118332280040'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.6ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:47:51 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.2ms)
+  Rendered venues/_foot.html.erb (2.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:207
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118333399200'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.1ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:48:10 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (3.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.1ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...(255,255,255,.2": expected ")", was "}"):
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     8:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     9:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    10:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11: 
+    12:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+app/assets/stylesheets/venues.scss:210
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1739559967773277152_70118307249620'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (20.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (138.3ms)
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:48:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 163ms (Views: 156.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:48:25 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (1.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 148ms (Views: 144.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:48:53 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.2ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:50:39 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.1ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 66ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:50:57 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:51:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.6ms)
+  Rendered venues/_foot.html.erb (1.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 157ms (Views: 147.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:51:37 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.0ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 137ms (Views: 131.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:51:42 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.4ms)
+  Rendered venues/_foot.html.erb (0.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 192ms (Views: 176.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:51:49 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (9.5ms)
+  Rendered venues/_foot.html.erb (0.3ms)
+  Rendered venues/get_venues.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 187ms (Views: 182.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 19:52:05 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.4ms)
+  Rendered venues/_foot.html.erb (2.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 170ms (Views: 159.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:00:15 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (14.0ms)
+  Rendered users/_foot.html.erb (1.1ms)
+  Rendered users/welcome.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 322ms (Views: 303.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 20:00:18 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W/sQjF9Suv2ua3+MiwpmoYwMl60/N29j7MGu5CjN6ydkfBcS5pMLOToLQuImOtxLmOI+rjvUFb7xIkFLmzabhw==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.5ms)
+  Rendered venues/_foot.html.erb (2.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (57.1ms)
+Completed 200 OK in 1571ms (Views: 113.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:09:26 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (24.3ms)
+  Rendered venues/_foot.html.erb (1.6ms)
+  Rendered venues/get_venues.html.erb within layouts/application (105.5ms)
+Completed 200 OK in 614ms (Views: 553.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:10:24 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.3ms)
+  Rendered venues/_foot.html.erb (3.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 188ms (Views: 179.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:15:30 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (22.3ms)
+  Rendered venues/_foot.html.erb (0.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (94.2ms)
+Completed 200 OK in 318ms (Views: 259.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:23:25 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (20.7ms)
+  Rendered venues/_foot.html.erb (4.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (127.1ms)
+Completed 200 OK in 648ms (Views: 534.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:29:45 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (16.9ms)
+  Rendered users/_foot.html.erb (3.0ms)
+  Rendered users/welcome.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 262ms (Views: 231.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 20:29:54 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jg4/IBRDQXDlfJRM/Y6ZG8UfF+GdO44OXGqioPRyfm6xiTi+rYLwtHEcqSJQviPx0fG+4pnY9NNBiU0PR4kOzg==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/get_venues.html.erb within layouts/application (24.8ms)
+Completed 500 Internal Server Error in 1445ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/monicaaguinaga/Desktop/wyncode/Travelize/app/views/venues/get_venues.html.erb:43: syntax error, unexpected keyword_class, expecting ')'
+....append=( f.label :title  class="");@output_buffer.safe_appe...
+...                               ^):
+  
+app/views/venues/get_venues.html.erb:43: syntax error, unexpected keyword_class, expecting ')'
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (104.5ms)
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 20:30:36 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jg4/IBRDQXDlfJRM/Y6ZG8UfF+GdO44OXGqioPRyfm6xiTi+rYLwtHEcqSJQviPx0fG+4pnY9NNBiU0PR4kOzg==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (3.9ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 1225ms (Views: 119.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:31:27 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (8.2ms)
+  Rendered venues/_foot.html.erb (2.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 340ms (Views: 313.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:31:57 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.8ms)
+  Rendered venues/_foot.html.erb (2.7ms)
+  Rendered venues/get_venues.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 287ms (Views: 276.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:32:44 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (11.9ms)
+  Rendered venues/_foot.html.erb (5.0ms)
+  Rendered venues/get_venues.html.erb within layouts/application (42.7ms)
+Completed 200 OK in 377ms (Views: 367.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:34:17 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (8.4ms)
+  Rendered venues/_foot.html.erb (1.9ms)
+  Rendered venues/get_venues.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 165ms (Views: 146.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:34:19 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.9ms)
+  Rendered venues/_foot.html.erb (2.5ms)
+  Rendered venues/get_venues.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 300ms (Views: 277.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:35:27 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (4.4ms)
+  Rendered venues/_foot.html.erb (1.8ms)
+  Rendered venues/get_venues.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 279ms (Views: 267.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:35:44 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (6.3ms)
+  Rendered users/_foot.html.erb (2.2ms)
+  Rendered users/welcome.html.erb within layouts/application (33.0ms)
+Completed 200 OK in 144ms (Views: 139.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:35:49 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.6ms)
+  Rendered users/_foot.html.erb (3.8ms)
+  Rendered users/welcome.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 117ms (Views: 114.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-11-29 20:35:59 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/FmDJvudMjApkE3/L0J+SPNWcWvyQWsBzOnf6QdfimHD3oS4QlyD9L3wcJGCcsSi57jYaPaiEdzRCjBGtKT6wQ==", "location"=>"miami", "interest"=>"Pubs & Breweries", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (1.4ms)
+  Rendered venues/_foot.html.erb (2.1ms)
+  Rendered venues/get_venues.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 1491ms (Views: 92.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/list_venues" for 127.0.0.1 at 2016-11-29 20:37:28 -0500
+Processing by VenuesController#get_venues as HTML
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (5.8ms)
+  Rendered venues/_foot.html.erb (1.2ms)
+  Rendered venues/get_venues.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 124ms (Views: 98.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:37:31 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (9.5ms)
+  Rendered users/_foot.html.erb (3.1ms)
+  Rendered users/welcome.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 180ms (Views: 170.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-11-29 20:39:53 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (15.6ms)
+  Rendered users/_foot.html.erb (7.6ms)
+  Rendered users/welcome.html.erb within layouts/application (76.8ms)
+Completed 200 OK in 758ms (Views: 744.7ms | ActiveRecord: 1.0ms)
+
+
