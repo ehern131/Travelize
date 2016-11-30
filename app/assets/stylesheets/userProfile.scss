@@ -3,25 +3,18 @@
   background-color: #020204 ;
   width: 100%;
 }
-
 h1 {
   margin: 0;
 }
-
-
-
 /*-webkit---------------------HEADER: ;*/
 /*-moz---------------------HEADER: ;*/
 /*-ms---------------------HEADER: ;*/
 /*-o---------------------HEADER: ;*/
 /*--------------------HEADER: ;*/
-
 .headerRow {
   background-color: #black;
   height: 35px;
 }
-
-
 .headerRow .words {
   height: 100%;
   float: right;
@@ -32,7 +25,6 @@ h1 {
   width: 250px;
   line-height: 2.3;
 }
-
 .headerRow .words a {
   text-decoration: none;
   text-transform: uppercase;
@@ -43,7 +35,6 @@ h1 {
     background-color: rgb(33,51,159);
   }
 }
-
 .login {
   float: right;
   background-color: black;
@@ -53,15 +44,10 @@ h1 {
     background-color: rgb(33,51,159);
   }
 }
-
-
-
-
 .navTop {
   height: 70px;
   background-color: #black;
 }
-
 .navTop .words2 {
   width: 100%;
   margin: 0 auto;
@@ -71,7 +57,6 @@ h1 {
   border-top: solid .05px rgba(135,135,135,0.3);
   border-bottom:  solid .05px rgba(135,135,135,0.1);
 }
-
 .navTop .words2 a {
   color: #a5a5a6 ;
   text-decoration: none;
@@ -83,7 +68,6 @@ h1 {
     background-color: rgb(33,51,159);
   }
 }
-
 #logo {
   float: left;
   background-image: url('Travelize_Logo.png');
@@ -94,14 +78,41 @@ h1 {
   position: relative;
   margin-left: -420;
 }
-
-
 /*-webkit-------------------------MAIN: ;*/
 /*-moz-------------------------MAIN: ;*/
 /*-ms-------------------------MAIN: ;*/
 /*-o-------------------------MAIN: ;*/
 /*------------------------MAIN: ;*/
-
+.createtrip {
+  background: #0272bd;
+  background-image: -webkit-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -moz-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -ms-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -o-linear-gradient(top, #0272bd, #60acdb);
+  background-image: linear-gradient(to bottom, #0272bd, #60acdb);
+  border-radius: 10px;
+  letter-spacing: .15em;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight:100;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.createtrip:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
 .main {
   height: 671px;
   background-color: #123;
@@ -110,17 +121,10 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-
-
-
 .hover {
   background-color: #c1c1c1 ;
   opacity: 30%;
-
 }
-
-
 .main2 {
   background-image: url('background4.jpg');
   background-repeat: no-repeat;
@@ -129,7 +133,6 @@ h1 {
   height: 100vh;
   display: flex;
 }
-
 .userInfo {
   height: inherit;
   color: #black;
@@ -148,22 +151,16 @@ h1 {
     margin: 10px 0 0 40px;
   }
 }
-
-
-
 .userName {
   padding-left: 40px;
   padding-top: 45px;
   font-size: 23px;
   max-width: 250px;
-
 }
-
 .userEmail {
   padding-left: 40px;
+  margin: 10px 0 30px 0;
 }
-
-
 .userTrip {
   height: 600px;
   max-height: 600px;
@@ -173,36 +170,57 @@ h1 {
   float: right;
   background-color: rgba(255,255,255,.9);
 }
-
 .tripContainer {
-  background-color: lightblue;
-  width: 590px;
-  height: 500px;
+  background-color: rgba(255,255,255,.8);
+  width: 500px;
+  height: 450px;
   float: right;
   margin: 40px 40px 0 0;
   display: flex;
-
   position: relative;
-  top: -320px;
+  top: -300px;
+  padding-left: 20px;
 }
-
+.mytrips {
+  position:relative;
+  left: 492px;
+  top: 40px;
+  color: #0A5673;
+  font-size: 1.75em;
+  z-index: 1;
+}
 .trips {
   flex-direction: column;
+color: red;
 }
-
-
-.createtrip {
+.triplist {
   position: relative;
-  right: 440px;
-  top: 140px;
+  top: -130px;
+  font-size: 2em;
 }
-
+.user-trip {
+  position: relative;
+  right: 480px;
+  top: 100px;
+  width: 200px;
+  height: 45px;
+  font-size: 1.4em !important;
+}
+.first-button{
+  margin-left: 26px;
+}
+.display-title {
+  display:block;
+}
+// .mytrips {
+//   font-size: 2em;
+//   // display: block;
+// }
 @font-face{
   font-family:'Brandon Grotesque';
   src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
   font-weight:normal;font-style:normal
 }
-
 @font-face{
   font-family:'Brandon Grotesque Bold';
   src:url("./assets/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
