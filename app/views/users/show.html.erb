@@ -37,7 +37,7 @@ crossorigin="anonymous"></script>
         </p>
 
         <div class="userImage">
-          <%= image_tag @user.avatar %>
+          <%= image_tag @user.avatar.url(:medium) %>
         </div>
 
 
@@ -46,10 +46,10 @@ crossorigin="anonymous"></script>
           <%= @user.email %>
         </p>
 
+<%= render 'paper' %>
+
         <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary first-button" %> |
         <%= link_to 'Back', users_path,class: "btn btn-primary"%>
-
-
 
         <div class="tripContainer">
           <div class="triplist">

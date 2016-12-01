@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    width: 100%;
+  }
+
+}
+
 body {
   font-family:'Brandon Grotesque';
 }
