@@ -47,7 +47,7 @@
   font-size: 11px;
   line-height: 35px;
   &:hover {
-    background-color: rgba(33,51,159,1);
+    background-color: rgba(33,51,159,.1);
   }
 }
 
@@ -55,7 +55,9 @@
   color:  #a5a5a6;
 }
 
-
+.modal-content {
+      margin-top: 190px;
+}
 
 .navTop {
   height: 70px;

@@ -10,7 +10,7 @@
 <a  id="logo"href="/" src="./assets/img/Travelize_Logo.png"></a>
 <div class="words">
 <% if current_user %>
-Hello, <%= current_user.name %> <%= link_to "Logout", root_path%>
+Hello, <%= current_user.name %> <%= link_to "Logout", '/logout'%>
 <% else %>
 <button class="login" data-toggle="modal" data-target="#myModal">
    LOG IN
@@ -52,11 +52,11 @@ Hello, <%= current_user.name %> <%= link_to "Logout", root_path%>
            </div>
          </div>
 
-         <div class="checkbox">
+         <!-- <div class="checkbox">
            <label>
              <input type="checkbox"> Remember me
            </label>
-         </div>
+         </div> -->
        <% end %>
 
      </div>
