@@ -92,7 +92,10 @@ body {
   border-top-left-radius: 6px;
 }
 
-
+.venues:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
 
 
 .phone {

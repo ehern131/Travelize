@@ -56,11 +56,6 @@ $(document).ready(function(){
                 .addClass("btn-primary")
                 .text("Ok")
                 .removeAttr("data-dismiss");
-                $(function () {
-                  $('#datetimepicker2').datetimepicker({
-                    locale: 'ru'
-                  });
-                });
 
     });
 
