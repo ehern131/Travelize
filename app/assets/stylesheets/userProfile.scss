@@ -1,3 +1,6 @@
+body {
+  font-family:'Brandon Grotesque', sans-serif !important;
+}
 .mycontainer {
   min-width: 960px;
   background-color: #020204 ;
@@ -114,7 +117,7 @@ h1 {
   text-decoration: none;
 }
 .main {
-  height: 671px;
+  // height: 671px;
   background-color: #123;
   max-height: 671px;
   background-image: url('background2.jpg');
@@ -151,6 +154,12 @@ h1 {
     margin: 10px 0 0 40px;
   }
 }
+
+.userDetails {
+  width: 30%;
+  height: 100%;
+}
+
 .userName {
   padding-left: 40px;
   padding-top: 45px;
@@ -169,53 +178,81 @@ h1 {
   display: inline-block;
   float: right;
   background-color: rgba(255,255,255,.9);
+  margin: 10px 0 10px 0;
 }
 .tripContainer {
   background-color: rgba(255,255,255,.8);
-  width: 500px;
-  height: 450px;
+  width: 65%;
+  height: 100%;
   float: right;
-  margin: 40px 40px 0 0;
+  margin: 0 40px 0 0;
   display: flex;
   position: relative;
-  top: -300px;
+  top: -397px;
   padding-left: 20px;
 }
 .mytrips {
   position:relative;
-  left: 492px;
-  top: 40px;
+  top: 20px;
+  left: 20px;
   color: #0A5673;
   font-size: 1.75em;
   z-index: 1;
+  height: 30px;
 }
 .trips {
   flex-direction: column;
-color: red;
 }
 .triplist {
   position: relative;
-  top: -130px;
+  // top: -130px;
+  // height: 40px;
   font-size: 2em;
 }
 .user-trip {
   position: relative;
-  right: 480px;
+  right: 530px;
   top: 100px;
   width: 200px;
   height: 45px;
   font-size: 1.4em !important;
 }
 .first-button{
-  margin-left: 26px;
+  margin-left: 80px;
 }
 .display-title {
   display:block;
+}
+.btn-primary {
+  color: #fff !important;
 }
 // .mytrips {
 //   font-size: 2em;
 //   // display: block;
 // }
+.mytrips-listings{
+  position: relative;
+  top: 180px;
+}
+.mytrips-listings li{
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: blue;
+  background: linear-gradient(to left, #0A5673  , #513783 );
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  color: #fff;
+}
+.mytrips-listings a:hover {
+  text-decoration: none;
+}
+.mytrips-listings a {
+  color: #fff;
+}
 @font-face{
   font-family:'Brandon Grotesque';
   src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");

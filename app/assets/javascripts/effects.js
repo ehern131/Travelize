@@ -1,62 +1,56 @@
-$(document).ready(function(){
-    $('.modal-footer button').click(function(){
-        var button = $(this);
+$(document).on('turbolinks:load', function(){
 
-        if ( button.attr("data-dismiss") != "modal" ){
-            var inputs = $('form input');
-            var title = $('.modal-title');
-            var progress = $('.progress');
-            var progressBar = $('.progress-bar');
-      var email = $('#uLogin');
-      var password = $('#uPassword');
-            inputs.attr("disabled", "disabled");
+ $('.modal-footer button').click(function(){
+   var button = $(this);
 
-            button.hide();
+   if ( button.attr("data-dismiss") != "modal" ){
+     var inputs = $('.modal-body form input');
+     var title = $('.modal-title');
+     var progress = $('.progress');
+     var progressBar = $('.progress-bar');
 
-            progress.show();
-      $.ajax({
-        type: "POST",
-        url: '/login',
-        data: {
-          email: email.val(),
-          password: password.val()
-        }
-      });
+     var form = $('.modal-body form');
+     console.log(form);
 
-            progressBar.animate({width : "100%"}, 100);
+     button.hide();
+     progress.show();
 
-            progress.delay(1000)
-                    .fadeOut(600);
+     progressBar.animate({width : "100%"}, 100);
+     // inputs.attr("disabled", "disabled");
 
-            button.text("Close")
-                    .removeClass("btn-primary")
-                    .addClass("btn-success")
-                    .blur()
-                    .delay(1600)
-                    .fadeIn(function(){
-                        title.text("Log in is successful");
-                        button.attr("data-dismiss", "modal");
-                    });
-        }
-    });
+     progress.delay(1000).fadeOut(600);
 
-    $('#myModal').on('hidden.bs.modal', function (e) {
-        var inputs = $('form input');
-        var title = $('.modal-title');
-        var progressBar = $('.progress-bar');
-        var button = $('.modal-footer button');
+     button.text("Close")
+       .removeClass("btn-primary")
+       .addClass("btn-success")
+       .blur()
+       .delay(1600)
+       .fadeIn(function() {
+         title.text("Log in is successful");
+         button.attr("data-dismiss", "modal");
+       }).delay(1000, function() {
+         form.submit();
+       });
+   }
 
-        inputs.removeAttr("disabled");
+   $('#myModal').on('hidden.bs.modal', function (e) {
+     var inputs = $('.modal-body form input');
+     var title = $('.modal-title');
+     var progressBar = $('.progress-bar');
+     var button = $('.modal-footer button');
 
-        title.text("Log in");
+     inputs.removeAttr("disabled");
 
-        progressBar.css({ "width" : "0%" });
+     title.text("Log in");
 
-        button.removeClass("btn-success")
-                .addClass("btn-primary")
-                .text("Ok")
-                .removeAttr("data-dismiss");
+     progressBar.css({ "width" : "0%" });
 
-    });
+     button.removeClass("btn-success")
+     .addClass("btn-primary")
+     .text("Log In!")
+     .removeAttr("data-dismiss");
 
+   });
+
+ });
 });
