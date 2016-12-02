@@ -26,7 +26,7 @@ h1 {
   justify-content: space-between;
   padding-right: 30px;
   width: 250px;
-  line-height: 2.3;
+  line-height: 2.6;
 }
 .headerRow .words a {
   text-decoration: none;
@@ -76,10 +76,10 @@ h1 {
   background-image: url('Travelize_Logo.png');
   background-size: contain;
   background-repeat: no-repeat;
-  height: 70px;
-  width: -5px;
+  width: 90px;
   position: relative;
-  margin-left: -420;
+  margin-top: 8px;
+  margin-left: 10px;
 }
 /*-webkit-------------------------MAIN: ;*/
 /*-moz-------------------------MAIN: ;*/
@@ -248,7 +248,7 @@ h1 {
   background: linear-gradient(to left, #0A5673  , #513783 );
   text-transform: uppercase;
   letter-spacing: .3em;
-  color: #fff;
+  color: lightgray;
   width: 90%;
   &:hover {
     background: linear-gradient(to left, #513783, #0A5673);
@@ -278,9 +278,11 @@ h1 {
 }
 .mytrips-listings a:hover {
   text-decoration: none;
+  color: white;
 }
 .mytrips-listings a {
-  color: #fff;
+  color: lightgray;
+  background: none;
 }
 @font-face{
   font-family:'Brandon Grotesque';

@@ -1,8 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 
 
@@ -36,8 +32,7 @@ crossorigin="anonymous"></script>
         <li class="image"><%= image_tag bus.image_url %></li>
         <li><span class="bus-name"><%= bus.name %></span><br>
           <p><%= simple_format bus.location.display_address.join("\n") %>
-            <%= bus.display_phone %><br>
-            <%= link_to 'Website' , ""%>
+            Phone: <%= bus.display_phone %><br>
           </p>
         </li>
         <!-- <li><p>Rating</p><%= bus.rating %></li> -->
@@ -50,7 +45,7 @@ crossorigin="anonymous"></script>
     <div class="savetrip">
       <div class="trip-button">
         <div class="field-title">
-          <%= f.label :title %>
+          <%= f.label :title %>:
           <%= f.text_field :title , class: 'title-venues', placeholder: "Ex: West Coast"%>
         </div>
       </div>

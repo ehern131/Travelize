@@ -60,13 +60,16 @@ body {
 .venues {
   min-height: 220px;
   border-bottom: 1px solid #b5b5b5;
-  padding-top: 30px;
+  padding-top: 42px;
   padding-bottom: 100px;
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.8);
   color: #505151;
   width: 675px;
   margin: 0 auto;
   line-height: 1.55em;
+  &:hover {
+    background-color: #ffffff;
+  }
 
 }
 .venues a{
@@ -144,39 +147,33 @@ input[type=checkbox]{
 // -o-----------------------CREATE TRIP BUTTON : ;
 // ----------------------CREATE TRIP BUTTON : ;
 .createtrip-venues {
-  background: #0272bd;
-  background-image: -webkit-linear-gradient(top, #0272bd, #60acdb);
-  background-image: -moz-linear-gradient(top, #0272bd, #60acdb);
-  background-image: -ms-linear-gradient(top, #0272bd, #60acdb);
-  background-image: -o-linear-gradient(top, #0272bd, #60acdb);
-  background-image: linear-gradient(to bottom, #0272bd, #60acdb);
-
+  background: linear-gradient(to left,#0A5673, #513783);
   border-radius: 10px;
   letter-spacing: .15em;
-  color: #ffffff;
+  color: gray;
   font-size: 23px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   text-align: center;
   font-weight:100;
   text-transform: uppercase;
-
   display: flex;
   justify-content: center;
   margin-left:auto;
   margin-right:auto;
-
+  &:hover {
+    color: #ffffff;
+    background: linear-gradient(to left, #513783, #0A5673);
+    // background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    // background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    // background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    // background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    // background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
 }
 
-.createtrip-venues:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
-  text-decoration: none;
-}
+
 
 .trip-button {
   display:flex;
@@ -189,7 +186,7 @@ input[type=checkbox]{
 
 
 .savetrip {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255,255,255,.8);
   width: 676px;
   padding: 10px 10px 40px 10px;
   position: relative;
@@ -216,9 +213,10 @@ input[type=checkbox]{
 }
 
 .title-venues {
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba(255,255,255,.1);
   border: none;
   width: 170px;
+  outline: none;
 }
 
 .startTime {
