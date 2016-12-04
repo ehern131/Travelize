@@ -186,13 +186,16 @@ input[type=checkbox]{
 
 
 .savetrip {
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,.9);
   width: 676px;
   padding: 10px 10px 40px 10px;
   position: relative;
   left: 13px;
   margin: 0 auto;
   color: #5F5F5F;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 

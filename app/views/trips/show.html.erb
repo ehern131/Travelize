@@ -34,50 +34,50 @@ crossorigin="anonymous"></script>
         <!-- <p>
         <strong>User:</strong>
         <%= @trip.user_id %>
-        </p> -->
-        <!-- <p>
-        <strong>Start time:</strong>
-        <%= @trip.start_time %>
-        </p>
-        <p>
-        <strong>End time:</strong>
-        <%= @trip.end_time %>
-        </p> -->
+      </p> -->
+      <!-- <p>
+      <strong>Start time:</strong>
+      <%= @trip.start_time %>
+    </p>
+    <p>
+    <strong>End time:</strong>
+    <%= @trip.end_time %>
+  </p> -->
 
-        <% @trip.venues.each do |venue| %>
-          <div class="everytrip">
-        <h3><%= venue.name %></h3><br>
-        <%= venue.address %><br>
-        <%= link_to "Directions" %> | <%= link_to "Website" %> | <%= link_to "Contact" %>
+  <% @trip.venues.each do |venue| %>
+  <div class="everytrip">
+    <h3><%= venue.name %></h3><br>
+    <%= venue.address %><br>
+    <%= link_to "Directions" %> | <%= link_to "Website" %> | <%= link_to "Contact" %>
 
-      </div>
-        <% end %>
-        <button class="print-button" sonclick="myFunction()">Print this page</button> |
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-        <!-- PRINT BUTTON# -->
-
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <!-- PRINT SCRIPT -->
-        <script>
-        function myFunction() {
-        window.print();
-        }
-        </script>
-
-        <%= link_to 'Edit' , edit_trip_path(@trip), :class => 'print-button'%> |
-        <%= link_to 'Back',  current_user, :class => 'print-button' %>
-
-
-      </ul>
-
-    </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <%= render 'foot' %>
   </div>
+  <% end %>
+  <button class="print-button" onclick="myFunction()">Print this page</button> |
+  <!-- PRINT BUTTON# -->
+  <!-- PRINT BUTTON# -->
+  <!-- PRINT BUTTON# -->
+  <!-- PRINT BUTTON# -->
+
+  <!-- PRINT SCRIPT -->
+  <!-- PRINT SCRIPT -->
+  <!-- PRINT SCRIPT -->
+  <!-- PRINT SCRIPT -->
+  <script>
+  function myFunction() {
+    window.print();
+  }
+  </script>
+
+  <%= link_to 'Edit' , edit_trip_path(@trip), :class => 'print-button'%> |
+  <%= link_to 'Back',  current_user, :class => 'print-button' %>
+
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<%= render 'foot' %>
+</div>

@@ -45,32 +45,35 @@ crossorigin="anonymous"></script>
             <strong>Email:</strong>
             <%= @user.email %> -->
           </p>
-          <%= render 'paper' %>
-<div class="editBack">
-          <%= link_to 'Edit', edit_user_path(@user), class: "profileEdit" %> |
-          <%= link_to 'Back', root_path,class: "profileEdit"%>
-        </div>
+          <div class="uploadavatar">
+            <%= render 'paper' %>
+          </div>
+          <div class="editBack">
+            <%= link_to 'Edit', edit_user_path(@user), class: "profileEdit" %> |
+            <%= link_to 'Back', root_path,class: "profileEdit"%>
+          </div>
         </div>
 
 
         <!-- <div class="tripContainer"> -->
+        <!-- <span class="mytrips">My trips</span><br> -->
+        <!-- <a class="myTripsHead">My Trips</a> -->
+        <div class="triplist"><a class='myTripsHead'>My Trips</a>
+          <% @user.trips.each do |trip| %>
           <!-- <span class="mytrips">My trips</span><br> -->
-          <!-- <a class="myTripsHead">My Trips</a> -->
-          <div class="triplist"><a class='myTripsHead'>My Trips</a>
-            <% @user.trips.each do |trip| %>
-            <!-- <span class="mytrips">My trips</span><br> -->
-            <ul class="mytrips-listings" id='tripsBox'>
-              <li><%= link_to trip.title, trip_path(trip)%>
-                <%= link_to '', edit_trip_path(trip), class: "fa fa-trash", id: "trash"%>
-                <%= link_to '', trip_path(trip), class: "fa fa-eye", id: "eye"%>
-                <%= link_to '', edit_trip_path(trip), class: "fa fa-cog", id: "cog"%>
-              </li><br>
-            </ul>
-            <% end %>
-          </div>
-          <!-- <div class="trip-button">
-          <td><%= link_to 'Create New Trip', root_path, class: "user-trip btn btn-primary"%></td><br>
-        </div> -->
+          <ul class="mytrips-listings" id='tripsBox'>
+            <li><%= link_to trip.title, trip_path(trip)%>
+              <%= link_to '', edit_trip_path(trip), class: "fa fa-trash", id: "trash"%>
+              <%= link_to '', trip_path(trip), class: "fa fa-eye", id: "eye"%>
+              <%= link_to '', edit_trip_path(trip), class: "fa fa-cog", id: "cog"%>
+            </li><br>
+          </ul>
+          <% end %>
+          <%= link_to 'Create New Trip', root_path, class: "createtrip-venues2"%></td><br>
+        </div>
+        <!-- <div class="trip-button">
+        <td><%= link_to 'Create New Trip', root_path, class: "user-trip btn btn-primary"%></td><br>
+      </div> -->
       <!-- </div> -->
 
 
