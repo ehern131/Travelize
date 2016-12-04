@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  font-family: 'Brandon Grotesque', sans-serif !important;
+}
+
 
 .tripsShow {
   background-color: rgba(255,255,255,.8);
@@ -18,5 +22,92 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-  height: 100vh;
+  height: 100%;
+
+}
+
+.tripvenues {
+  border-radius: 6px;
+  height: 100%;
+  font-family:'Brandon Grotesque' !important;
+  border-bottom: 1px solid #b5b5b5;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: rgba(255,255,255,.9);
+  color: #6D6D6D;
+  width: 675px;
+  margin: 0 auto;
+  line-height: 1.55em;
+  margin-bottom: 30px;
+}
+.tripvenues h2 {
+  padding: 10px;
+  text-align: left;
+  border-radius: 6px;
+  color: #513783;
+
+
+}
+
+.tripvenues h2:hover {
+  opacity: .9;
+}
+
+.everytrip a {
+ color: #2267F2;
+ text-decoration: none;
+ border-bottom: 1px solid #2267F2;
+
+}
+.everytrip h3 {
+
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: -16px;
+  margin-top: 0px;
+
+}
+.everytrip a:hover {
+ background-color: #fff !important;
+ border-bottom: 1px solid #513783 !important;
+text-decoration: none;
+
+}
+
+.everytrip{
+  background-color: rgba(255,255,255,.6);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 30px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+
+.everytrip:hover {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 1px 1px 8px #513783;
+}
+.print-button {
+  color: lightgrey !important;
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0A5673 , #513783); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0A5673 , #513783); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  min-width: 50px;
+  &:hover {
+    background: linear-gradient(to left, #513783 , #0A5673 );
+    text-decoration: none;
+    color: #fff !important;
+  }
+}
+
+.print-button a:hover {
+  color: #fff;
 }

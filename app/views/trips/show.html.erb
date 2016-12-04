@@ -1,4 +1,8 @@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -21,31 +25,34 @@ crossorigin="anonymous"></script>
 
     <div class="results">
 
-      <ul class="venues">
-        <p>
-          <strong>Title:</strong>
-          <%= @trip.title %>
-        </p>
+      <ul class="tripvenues">
 
+        <h2>
+          <strong>Trip:</strong>
+          <%= @trip.title %>
+        </h2>
         <!-- <p>
         <strong>User:</strong>
         <%= @trip.user_id %>
         </p> -->
-        <p>
+        <!-- <p>
         <strong>Start time:</strong>
         <%= @trip.start_time %>
         </p>
         <p>
         <strong>End time:</strong>
         <%= @trip.end_time %>
-        </p>
-        <p>
+        </p> -->
+
         <% @trip.venues.each do |venue| %>
-        <%= venue.name %><br>
+          <div class="everytrip">
+        <h3><%= venue.name %></h3><br>
         <%= venue.address %><br>
+        <%= link_to "Directions" %> | <%= link_to "Website" %> | <%= link_to "Contact" %>
+
+      </div>
         <% end %>
-        </p>
-        <button onclick="myFunction()">Print this page</button>
+        <button class="print-button" sonclick="myFunction()">Print this page</button> |
         <!-- PRINT BUTTON# -->
         <!-- PRINT BUTTON# -->
         <!-- PRINT BUTTON# -->
@@ -61,8 +68,8 @@ crossorigin="anonymous"></script>
         }
         </script>
 
-        <%= link_to 'Edit', edit_trip_path(@trip) %> |
-        <%= link_to 'Back', current_user %>
+        <%= link_to 'Edit' , edit_trip_path(@trip), :class => 'print-button'%> |
+        <%= link_to 'Back',  current_user, :class => 'print-button' %>
 
 
       </ul>

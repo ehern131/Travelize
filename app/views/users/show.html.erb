@@ -36,21 +36,27 @@ crossorigin="anonymous"></script>
             <%= @user.name %>
           </p>
           <div class="userImage">
-            <%= image_tag @user.avatar.url(:medium) %>
+            <%= image_tag @user.avatar.url(:medium) %><br>
+            <!-- <%= link_to 'Change Profile Picture', class: 'updateProfilePic' %> <br> -->
           </div>
           <p class="userEmail">
+
+            <!-- <br>
             <strong>Email:</strong>
-            <%= @user.email %>
+            <%= @user.email %> -->
           </p>
           <%= render 'paper' %>
-          <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-primary first-button" %> |
-          <%= link_to 'Back', root_path,class: "btn btn-primary"%>
+<div class="editBack">
+          <%= link_to 'Edit', edit_user_path(@user), class: "profileEdit" %> |
+          <%= link_to 'Back', root_path,class: "profileEdit"%>
+        </div>
         </div>
 
 
-        <div class="tripContainer">
+        <!-- <div class="tripContainer"> -->
           <!-- <span class="mytrips">My trips</span><br> -->
-          <div class="triplist">
+          <!-- <a class="myTripsHead">My Trips</a> -->
+          <div class="triplist"><a class='myTripsHead'>My Trips</a>
             <% @user.trips.each do |trip| %>
             <!-- <span class="mytrips">My trips</span><br> -->
             <ul class="mytrips-listings" id='tripsBox'>
@@ -65,7 +71,7 @@ crossorigin="anonymous"></script>
           <!-- <div class="trip-button">
           <td><%= link_to 'Create New Trip', root_path, class: "user-trip btn btn-primary"%></td><br>
         </div> -->
-      </div>
+      <!-- </div> -->
 
 
     </div>
