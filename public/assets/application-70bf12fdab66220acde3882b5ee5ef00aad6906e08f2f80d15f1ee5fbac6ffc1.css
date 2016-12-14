@@ -518,7 +518,16 @@ h1 {
 }
 
 /* line 74, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
-
+#logo {
+  float: left;
+  background-image: "/images/images/Travelize_Logo.png";
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 10px;
+}
 
 /*-webkit-------------------------MAIN: ;*/
 /*-moz-------------------------MAIN: ;*/
