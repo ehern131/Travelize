@@ -46595,3 +46595,50 @@ Completed 200 OK in 145ms (Views: 121.6ms | ActiveRecord: 0.9ms)
   [1m[36mVenue Load (15.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
   [1m[36mVenue Load (1.0ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2016-12-14 16:17:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (15.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (30.9ms)
+Started GET "/" for 127.0.0.1 at 2016-12-14 16:17:15 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.2ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (3982.5ms)
+  Rendered users/welcome.html.erb within layouts/application (12983.7ms)
+Completed 200 OK in 4172ms (Views: 4168.1ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 13267ms (Views: 13240.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 16:17:25 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.6ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 93ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-12-14 16:17:31 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pL6mgt+b/J1Q8PiDm5I55+HBivP4qWRkchqPWtSSdUtMv/whCR07afJe43zWDt72Ei6Ovz60CR/gY41C4Ivsgg==", "location"=>"miami", "interest"=>"Restaurants", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  Rendered venues/_nav.html.erb (3.2ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (329.3ms)
+Completed 200 OK in 2131ms (Views: 395.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 16:18:13 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (5.6ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 66ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
