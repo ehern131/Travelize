@@ -46740,3 +46740,210 @@ Processing by UsersController#welcome as HTML
 Completed 200 OK in 292ms (Views: 289.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-14 17:32:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (15.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (10.4ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (5787.2ms)
+Completed 200 OK in 6255ms (Views: 6240.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 18:29:47 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (14.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (11.7ms)
+  Rendered users/_foot.html.erb (0.7ms)
+  Rendered users/welcome.html.erb within layouts/application (2281.3ms)
+Completed 200 OK in 4189ms (Views: 4127.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 18:30:03 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:53:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (15.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (25.3ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (1514.3ms)
+Completed 200 OK in 3241ms (Views: 3202.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:53:39 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.0ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-14 19:53:56 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Y1HtbPgejIGG/HkGMc5WIxR7FaoWMQVDeY1DywmFO4OvBQl13hjOPX2YNW/MfsZsE1F7oH8TNPnLo9hvObmhrQ==", "email"=>"ehern131@fiu.edu", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (15.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ehern131@fiu.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 124ms (ActiveRecord: 15.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-14 19:53:56 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:53:59 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.8ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:54:00 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (2.2ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-14 19:54:13 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o4UKgdHKZ0eroViXtUaOoVkDLI9+bkL0lCz4BlkFeHWqmDsXZl7xTiINR+2W6N7QIPcH8S1Q+sdTO/OHmvZomg==", "email"=>"ehern131@fiu.edu", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ehern131@fiu.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-14 19:54:13 -0500
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:54:15 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (1.7ms)
+  Rendered users/_foot.html.erb (0.5ms)
+  Rendered users/welcome.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2016-12-14 19:56:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (14.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 1782ms (Views: 1671.3ms | ActiveRecord: 1.1ms)
+
+
+  [1m[36mUser Load (27.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTrip Load (0.6ms)[0m  [1m[34mSELECT "trips".* FROM "trips"[0m
+  [1m[36mVenue Load (16.5ms)[0m  [1m[34mSELECT "venues".* FROM "venues"[0m
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:56:45 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (4.2ms)
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/welcome.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 119ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-14 19:56:57 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IWZ1cfuMoC+aW3sBPlcIwBffuhVyaTFv/Fmwq2VFgAwoe0TnTBg2JhP3ZHsd+VixbiuRayFXiVw7TrsqpraQ4w==", "email"=>"bianca@wyncode.co", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bianca@wyncode.co"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-14 19:56:57 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.7ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 63ms (Views: 60.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/list_venues" for 127.0.0.1 at 2016-12-14 19:57:08 -0500
+Processing by VenuesController#get_venues as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QIa4r4xfuFAF6TFLhiqJcp6DE9H6BbCjAhbwU/5/IySM0ly2qln67P6NfSJ7mhk9mal925MngRmwOGv3zkO5Cg==", "location"=>"vegas baby", "interest"=>"Nightlife", "commit"=>"Search"}
+  Rendering venues/get_venues.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered venues/_nav.html.erb (2.3ms)
+  Rendered venues/_foot.html.erb (0.4ms)
+  Rendered venues/get_venues.html.erb within layouts/application (193.8ms)
+Completed 200 OK in 1721ms (Views: 237.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/trips" for 127.0.0.1 at 2016-12-14 19:57:19 -0500
+DEPRECATION WARNING: before_filter is deprecated and will be removed in Rails 5.1. Use before_action instead. (called from <class:TripsController> at /Users/ErickHernandez/Desktop/wyncode/travelize/app/controllers/trips_controller.rb:3)
+Processing by TripsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XRquhsJB7HN8wyLRka1cyq2KRFnsF+elcLiMWM/NI5GRTkqf5Eeuz4enbrhsHcyFqqAqU4U11h/Clhf8//G5vw==", "trip"=>{"venues_attributes"=>{"0"=>{"enable"=>"0", "name"=>"Skyfall Lounge", "address"=>"Delano Las Vegas\r\n3940 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89119"}, "1"=>{"enable"=>"0", "name"=>"Eyecandy", "address"=>"3950 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89119"}, "2"=>{"enable"=>"0", "name"=>"Bare Pool Lounge", "address"=>"The Mirage Hotel & Casino\r\n3400 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "3"=>{"enable"=>"0", "name"=>"LAX Nightclub", "address"=>"3900 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "4"=>{"enable"=>"0", "name"=>"The Chandelier", "address"=>"The Cosmopolitan Of Las Vegas\r\n3708 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "5"=>{"enable"=>"0", "name"=>"Parasol Up / Parasol Down", "address"=>"3131 Las Vegas Blvd. South\r\nThe Strip\r\nLas Vegas, NV 89109"}, "6"=>{"enable"=>"0", "name"=>"Double Down Saloon", "address"=>"4640 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89109"}, "7"=>{"enable"=>"0", "name"=>"Velveteen Rabbit", "address"=>"1218 S Main St\r\nDowntown\r\nLas Vegas, NV 89104"}, "8"=>{"enable"=>"0", "name"=>"Bond", "address"=>"The Cosmopolitan Of Las Vegas\r\n3708 Las Vegas Blvd S\r\nThe Strip\r\nLas Vegas, NV 89109"}, "9"=>{"enable"=>"0", "name"=>"Ghostbar", "address"=>"4321 W Flamingo Rd\r\nPalms Casino Resort\r\nLas Vegas, NV 89103"}, "10"=>{"enable"=>"0", "name"=>"Hakkasan Nightclub", "address"=>"Mgm Grand Hotel And Casino\r\n3799 Las Vegas Blvd S\r\nEastside\r\nLas Vegas, NV 89109"}, "11"=>{"enable"=>"0", "name"=>"Dispensary Lounge", "address"=>"2451 E Tropicana Ave\r\nSoutheast\r\nLas Vegas, NV 89121"}, "12"=>{"enable"=>"0", "name"=>"The Chocolate Bar", "address"=>"New York New York\r\n3790 Las Vegas Blvd\r\nThe Strip\r\nSouth Las Vegas, NV 89109"}, "13"=>{"enable"=>"0", "name"=>"Hyde Bellagio", "address"=>"3600 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "14"=>{"enable"=>"0", "name"=>"Rehab Beach Club", "address"=>"Hard Rock Hotel & Casino\r\n4455 Paradise Rd\r\nEastside\r\nLas Vegas, NV 89169"}, "15"=>{"enable"=>"0", "name"=>"The Waterhole", "address"=>"5115 Spring Mountain Rd\r\nSte 123\r\nChinatown\r\nLas Vegas, NV 89146"}, "16"=>{"enable"=>"0", "name"=>"The Laundry Room", "address"=>"525 E Fremont St\r\nDowntown\r\nLas Vegas, NV 89101"}, "17"=>{"enable"=>"0", "name"=>"Garden of the Gods Pool Oasis", "address"=>"Caesars Palace Las Vegas Hotel And Casino\r\n3570 Las Vegas Boulevard South\r\nThe Strip\r\nLas Vegas, NV 89109"}, "18"=>{"enable"=>"0", "name"=>"Planet Hollywood Diamond Lounge", "address"=>"3663 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89109"}, "19"=>{"enable"=>"0", "name"=>"Foundation Room", "address"=>"Mandalay Bay Hotel & Casino\r\n3950 S Las Vegas Blvd\r\nThe Strip\r\nLas Vegas, NV 89119"}}, "title"=>"efgkjwjkwgkjwgwg", "start_time(1i)"=>"2016", "start_time(2i)"=>"12", "start_time(3i)"=>"15", "end_time(1i)"=>"2016", "end_time(2i)"=>"12", "end_time(3i)"=>"15"}, "commit"=>"Create my trip"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (16.3ms)[0m  [1m[32mINSERT INTO "trips" ("title", "user_id", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "efgkjwjkwgkjwgwg"], ["user_id", 10], ["start_time", 2016-12-15 00:00:00 UTC], ["end_time", 2016-12-15 00:00:00 UTC], ["created_at", 2016-12-15 00:57:19 UTC], ["updated_at", 2016-12-15 00:57:19 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 67ms (ActiveRecord: 17.8ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2016-12-14 19:57:19 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.3ms)
+  Rendered users/_paper.html.erb (16.2ms)
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (51.8ms)
+Completed 200 OK in 124ms (Views: 98.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trips/15" for 127.0.0.1 at 2016-12-14 19:57:29 -0500
+Processing by TripsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT  "trips".* FROM "trips" WHERE "trips"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering trips/show.html.erb within layouts/application
+  Rendered trips/_nav.html.erb (2.0ms)
+  [1m[36mVenue Load (15.4ms)[0m  [1m[34mSELECT "venues".* FROM "venues" INNER JOIN "venue_trip_links" ON "venues"."id" = "venue_trip_links"."venue_id" WHERE "venue_trip_links"."trip_id" = ?[0m  [["trip_id", 15]]
+  Rendered trips/_foot.html.erb (0.6ms)
+  Rendered trips/show.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 136ms (Views: 83.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2016-12-14 19:57:32 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (3.4ms)
+  Rendered users/_paper.html.erb (4.5ms)
+  [1m[36mTrip Load (0.2ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered users/_foot.html.erb (0.4ms)
+  Rendered users/show.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.6ms)
+
+
