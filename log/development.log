@@ -47119,3 +47119,13 @@ puma (3.6.1) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
   Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.3ms)
+Started GET "/" for 127.0.0.1 at 2016-12-22 16:19:55 -0500
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendered users/_nav.html.erb (2.4ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
