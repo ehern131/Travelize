@@ -46966,3 +46966,13 @@ Processing by UsersController#welcome as HTML
 Completed 200 OK in 100ms (Views: 82.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-22 16:06:01 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (16.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#welcome as HTML
+  Rendering users/welcome.html.erb within layouts/application
+  Rendered users/_nav.html.erb (6.7ms)
+  Rendered users/_foot.html.erb (0.3ms)
+  Rendered users/welcome.html.erb within layouts/application (1786.4ms)
+Completed 200 OK in 1950ms (Views: 1928.6ms | ActiveRecord: 0.0ms)
+
+
