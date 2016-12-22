@@ -1,0 +1,1347 @@
+/*-webkit---------------------HEADER: ;*/
+/*-moz---------------------HEADER: ;*/
+/*-ms---------------------HEADER: ;*/
+/*-o---------------------HEADER: ;*/
+/*--------------------HEADER: ;*/
+/* line 8, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.headerRow {
+  background-color: #black;
+  height: 35px;
+}
+
+/* line 14, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.headerRow .words {
+  width: 175px;
+  height: 100%;
+  float: right;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+/* line 24, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.headerRow .words a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #gray;
+  font-size: 11px;
+  line-height: 35px;
+}
+/* line 30, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.headerRow .words a:hover {
+  color: #ffffff;
+}
+
+/* line 35, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.words {
+  color: #a5a5a6;
+}
+
+/* line 39, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.modal-content {
+  margin-top: 190px;
+}
+
+/* line 43, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.navTop {
+  height: 70px;
+  background-color: #black;
+  display: flex;
+}
+
+/* line 49, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.navTop .words2 {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  border-top: solid 0.05px rgba(135, 135, 135, 0.3);
+  border-bottom: solid 0.05px rgba(135, 135, 135, 0.1);
+}
+
+/* line 59, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.navTop .words2 a {
+  color: #a5a5a6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 70px;
+  padding: 0 45px 0 45px;
+}
+/* line 66, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.navTop .words2 a:hover {
+  color: #ffffff;
+}
+
+/* line 71, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+
+/* line 85, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer {
+  padding-top: 70px;
+  height: 280px;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #1F0B44;
+  background: #136a8a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0A5673, #513783);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0A5673, #513783);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*// ----------------------FOOTER
+// ----------------------FOOTER
+// ----------------------FOOTER
+// ----------------------FOOTER*/
+/* line 109, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer ul {
+  position: relative;
+  left: -20px;
+}
+
+/* line 113, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer li {
+  list-style-type: none;
+  font-size: .95em;
+  padding-bottom: 3px;
+}
+
+/* line 119, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.footer-nav, .social-media {
+  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* line 125, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer li a {
+  text-decoration: none;
+  color: #1F0B44;
+}
+
+/* line 129, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer li a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  color: #d1d1d1;
+}
+
+/* line 135, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#footer h3 {
+  color: #1F0B44;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 142, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.social-media li {
+  display: inline;
+  padding-right: 25px;
+  color: #1F0B44;
+}
+
+/* line 148, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.social-media {
+  text-align: left;
+}
+
+/* line 153, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+.social-media li i {
+  font-size: 20px;
+}
+
+/* line 157, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  box-shadow: 1px 1px 12px #1D1D1D;
+}
+
+/* line 165, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore img:hover {
+  box-shadow: 1px 1px 12px #000;
+  transition: box-shadow 0.5s ease;
+  opacity: .8;
+}
+
+/* line 170, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore {
+  padding: 50px 0 20px 0;
+  background-color: #222222;
+  background-image: radial-gradient(circle, #5D5C5C, #1D1D1D);
+  color: #DEDEDE;
+  margin-top: 50px;
+  font-size: .8em;
+}
+
+/* line 183, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 191, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore li {
+  display: inline;
+  float: left;
+  font-size: 1.2em;
+  line-height: 1em;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+}
+
+/* line 201, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/nav&footer.scss */
+#explore h2 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  letter-spacing: .08em;
+  font-size: 1.1em;
+}
+/* line 1, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+body {
+  font-family: 'Brandon Grotesque', sans-serif !important;
+}
+
+/* line 10, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.tripsShow {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 500px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+/* line 17, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.mainTrips {
+  background-color: #123;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100%;
+}
+
+/* line 29, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.tripvenues {
+  border-radius: 6px;
+  height: 100%;
+  font-family: 'Brandon Grotesque' !important;
+  border-bottom: 1px solid #b5b5b5;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #6D6D6D;
+  width: 675px;
+  margin: 0 auto;
+  line-height: 1.55em;
+  margin-bottom: 30px;
+}
+
+/* line 43, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.tripvenues h2 {
+  padding: 10px;
+  text-align: left;
+  border-radius: 6px;
+  color: #513783;
+}
+
+/* line 52, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.tripvenues h2:hover {
+  opacity: .9;
+}
+
+/* line 56, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.everytrip a {
+  color: #2267F2;
+  text-decoration: none;
+  border-bottom: 1px solid #2267F2;
+}
+
+/* line 62, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.everytrip h3 {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: -16px;
+  margin-top: 0px;
+}
+
+/* line 70, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.everytrip a:hover {
+  background-color: #fff !important;
+  border-bottom: 1px solid #513783 !important;
+  text-decoration: none;
+}
+
+/* line 77, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.everytrip {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  line-height: 30px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px #000;
+}
+
+/* line 90, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.everytrip:hover {
+  background-color: white;
+  box-shadow: 1px 1px 8px #513783;
+}
+
+/* line 94, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.print-button {
+  color: lightgrey !important;
+  background: #136a8a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0A5673, #513783);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0A5673, #513783);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  min-width: 50px;
+}
+/* line 104, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.print-button:hover {
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+  color: #fff !important;
+}
+
+/* line 111, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
+.print-button a:hover {
+  color: #fff;
+}
+/* line 1, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+body {
+  font-family: 'Brandon Grotesque', sans-serif !important;
+}
+
+/* line 4, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mycontainer {
+  min-width: 960px;
+  background-color: #020204;
+  width: 100%;
+}
+
+/* line 9, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+h1 {
+  margin: 0;
+}
+
+/*-webkit---------------------HEADER: ;*/
+/*-moz---------------------HEADER: ;*/
+/*-ms---------------------HEADER: ;*/
+/*-o---------------------HEADER: ;*/
+/*--------------------HEADER: ;*/
+/* line 17, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.headerRow {
+  background-color: #black;
+  height: 35px;
+}
+
+/* line 21, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.headerRow .words {
+  height: 100%;
+  float: right;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-right: 30px;
+  width: 250px;
+  line-height: 2.6;
+}
+
+/* line 31, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.headerRow .words a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a5a5a6;
+  font-size: 11px;
+  line-height: 35px;
+}
+/* line 37, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.headerRow .words a:hover {
+  background: linear-gradient(to left, #0A5673, #513783);
+}
+
+/* line 41, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.login {
+  float: right;
+  background-color: black;
+  border: none;
+  font-size: 11px;
+}
+/* line 46, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.login:hover {
+  background: linear-gradient(to left, #0A5673, #513783);
+}
+
+/* line 50, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.navTop {
+  height: 70px;
+  background-color: #black;
+}
+
+/* line 54, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.navTop .words2 {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  border-top: solid 0.05px rgba(135, 135, 135, 0.3);
+  border-bottom: solid 0.05px rgba(135, 135, 135, 0.1);
+}
+
+/* line 63, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.navTop .words2 a {
+  color: #a5a5a6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 70px;
+  padding: 0 45px 0 45px;
+}
+/* line 70, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.navTop .words2 a:hover {
+  background: linear-gradient(to left, #0A5673, #513783);
+}
+
+/* line 74, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#logo {
+  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  position: relative;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+/*-webkit-------------------------MAIN: ;*/
+/*-moz-------------------------MAIN: ;*/
+/*-ms-------------------------MAIN: ;*/
+/*-o-------------------------MAIN: ;*/
+/*------------------------MAIN: ;*/
+/* line 89, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.createtrip {
+  background: #0272bd;
+  background-image: -webkit-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -moz-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -ms-linear-gradient(top, #0272bd, #60acdb);
+  background-image: -o-linear-gradient(top, #0272bd, #60acdb);
+  background-image: linear-gradient(to bottom, #0272bd, #60acdb);
+  border-radius: 10px;
+  letter-spacing: .15em;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 110, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.createtrip:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* line 119, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.main {
+  background-color: #123;
+  max-height: 671px;
+  /*background-image: url("background2.jpg");*/
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 127, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.hover {
+  background-color: #c1c1c1;
+  opacity: 30%;
+}
+
+/* line 131, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.main2 {
+  /*background-image: url("background4.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/* line 139, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.userInfo {
+  height: 94%;
+  color: #black;
+  width: 70%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  justify-content: center;
+}
+/* line 151, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.userInfo .userImage {
+  background-color: lightblue;
+  max-width: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 200px;
+  margin: 10px 0 0 40px;
+}
+
+/* line 161, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.createtrip-venues2 {
+  width: 60%;
+  background: linear-gradient(to left, #0A5673, #513783);
+  border-radius: 10px;
+  letter-spacing: .15em;
+  color: gray;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-right: auto;
+}
+/* line 178, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.createtrip-venues2:hover {
+  color: #ffffff;
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+}
+
+/* line 190, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#user_avatar {
+  margin-bottom: 12px;
+  color: black;
+}
+
+/* line 195, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.userDetails {
+  width: 30%;
+  height: 100%;
+}
+
+/* line 199, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.userName {
+  padding-left: 40px;
+  padding-top: 45px;
+  font-size: 30px;
+  max-width: 240px;
+  margin-bottom: 20px;
+  font-family: 'Brandon Grotesque', sans-serif !important;
+  width: 300px;
+}
+
+/* line 208, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.userEmail {
+  padding-left: 40px;
+  font-family: 'Brandon Grotesque', sans-serif !important;
+  margin: 10px 0 30px 0;
+  font-size: 16px;
+}
+
+/* line 235, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.myTripsHead {
+  margin-left: 40px;
+  background-color: transparent !important;
+  font-style: none !important;
+  color: #333;
+  text-decoration: none !important;
+  font-size: 24px;
+}
+
+/* line 243, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.edit_user {
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 247, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.triplist {
+  position: relative;
+  font-size: 23px;
+  width: 70%;
+  float: right;
+  display: inline-block;
+  top: -100%;
+  height: 100%;
+  padding-right: 10px;
+  padding-top: 38px;
+}
+
+/* line 258, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#tripsBox {
+  top: 10px;
+}
+
+/* line 262, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.user-trip {
+  position: relative;
+  right: 530px;
+  top: 100px;
+  width: 200px;
+  height: 45px;
+  font-size: 1.4em !important;
+}
+
+/* line 270, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.first-button {
+  margin-left: 80px;
+}
+
+/* line 273, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.display-title {
+  display: block;
+}
+
+/* line 276, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.btn-primary {
+  color: #fff !important;
+}
+
+/* line 283, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mytrips-listings {
+  position: relative;
+  top: 180px;
+}
+
+/* line 287, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mytrips-listings li {
+  list-style-type: none;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  min-width: 250px;
+  min-height: 50px;
+  background-color: blue;
+  background: #444444;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  color: lightgray;
+  width: 90%;
+  line-height: 26px;
+}
+/* line 301, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mytrips-listings li:hover {
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+}
+
+/* line 311, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.actions input {
+  color: lightgrey !important;
+  background: #136a8a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0A5673, #513783);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0A5673, #513783);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 6px !important;
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  min-width: 50px;
+  color: lightgrey;
+  border-radius: 3px;
+}
+
+/* line 324, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.actions input:hover {
+  color: #fff !important;
+}
+
+/* line 327, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.field2 input {
+  color: lightgrey;
+  border-radius: 3px;
+  border: none;
+}
+
+/* line 332, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.uploadavatar {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 336, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#cog {
+  font-size: 13px;
+  float: right;
+  padding: 4px;
+  line-height: 20px;
+}
+
+/* line 342, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#eye {
+  font-size: 13px;
+  float: right;
+  padding: 4px;
+  line-height: 20px;
+}
+
+/* line 348, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+#trash {
+  font-size: 13px;
+  float: right;
+  padding: 4px;
+  line-height: 20px;
+}
+
+/* line 354, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mytrips-listings a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 358, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.mytrips-listings a {
+  color: lightgray;
+  background: none;
+}
+
+/* line 362, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.myTripsHead {
+  margin-left: 40px;
+  background-color: none;
+  font-style: none;
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 376, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.editBack {
+  margin: 0 auto;
+  position: relative;
+  margin-left: 40px;
+}
+
+/* line 381, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.profileEdit {
+  width: 50px;
+}
+
+/* line 384, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.updateProfilePic {
+  margin-top: 10px;
+}
+
+/* line 387, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.profileEdit {
+  color: lightgrey !important;
+  background: #136a8a;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0A5673, #513783);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0A5673, #513783);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  min-width: 50px;
+}
+/* line 397, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
+.profileEdit:hover {
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+  color: #fff !important;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url("assets/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon Grotesque Bold';
+  src: url("./assets/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 5, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.mycontainer {
+  min-width: 960px;
+  background-color: #020204;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 13, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+h1 {
+  margin: 0;
+}
+
+/*-webkit-------------------------MAIN: ;*/
+/*-moz-------------------------MAIN: ;*/
+/*-ms-------------------------MAIN: ;*/
+/*-o-------------------------MAIN: ;*/
+/*------------------------MAIN: ;*/
+/* line 60, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.main {
+  background-color: #123;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+/* line 71, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.hover {
+  background-color: #c1c1c1;
+  opacity: 30%;
+}
+
+/* line 79, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.class {
+  display: inline;
+}
+
+/* line 83, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.search {
+  color: #fff;
+  margin: 0 auto;
+}
+
+/* line 88, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#interest, #location {
+  color: #000;
+}
+
+/* line 92, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.search p {
+  display: inline;
+  margin: 10px;
+}
+
+/* line 97, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.btn-default {
+  width: 100px;
+  margin-left: 20px;
+}
+
+/* line 102, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.mainSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  /*left: 17%;*/
+  position: absolute;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100px;
+  color: #fff;
+  z-index: 2;
+  border-radius: 7px;
+  max-height: 100px;
+}
+
+/* line 120, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+.class {
+  display: inline;
+}
+
+/* line 125, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background {
+  z-index: 1;
+  height: 90vh;
+}
+/* line 130, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .mainSearch {
+  display: flex;
+  margin: 0 auto;
+  width: 900px;
+}
+/* line 137, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .form {
+  height: 100px;
+  display: flex;
+  border: solid 0.05px rgba(135, 135, 135, 0.7);
+  border-radius: 7px;
+  width: 900px;
+}
+/* line 148, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .where {
+  border-right: solid 0.05px rgba(135, 135, 135, 0.7);
+  height: 100px;
+  display: inline-block;
+  margin-left: 0px;
+  float: left;
+  flex-direction: row;
+  width: 400px;
+}
+/* line 160, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .where #location {
+  margin-left: 20px;
+  border: none;
+  height: 50px;
+  display: inline-block;
+  background-color: inherit;
+  font-size: 19px;
+  color: #a5a5a6;
+  outline: none;
+  width: 280px;
+}
+/* line 174, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background #locationTag {
+  line-height: 36px;
+  margin-left: 20px;
+}
+/* line 181, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .what {
+  border-right: solid 0.05px rgba(135, 135, 135, 0.7);
+  height: 100px;
+  display: inline-block;
+  margin-left: 0px;
+  float: left;
+  flex-direction: row;
+  width: 400px;
+}
+/* line 191, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .what #interest {
+  margin-left: 20px;
+  border: none;
+  height: 50px;
+  display: inline-block;
+  background-color: inherit;
+  font-size: 19px;
+  color: #a5a5a6;
+  outline: none;
+}
+/* line 204, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background #interestTag {
+  line-height: 36px;
+  margin-left: 20px;
+}
+/* line 211, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .searchContainer {
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+/* line 215, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .searchContainer .searchBtn {
+  background: linear-gradient(to left, #0A5673, #513783);
+  border-radius: 25px;
+  letter-spacing: .15em;
+  color: gray;
+  font-size: 13px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 10px #000;
+  width: 120px;
+  height: 40px;
+  border-style: none;
+  position: relative;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+/* line 240, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#video-background .searchContainer .searchBtn:hover {
+  color: #ffffff;
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+}
+
+/* line 281, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/users.scss */
+#footer {
+  padding-top: 70px;
+  height: 300px;
+  background-color: #f2f2f2;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #5b5b5b;
+}
+@media only screen and (max-width: 768px) {
+  /* line 5, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+  * {
+    /* For mobile phones: */
+    width: 100%;
+  }
+}
+
+/* line 13, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+body {
+  font-family: 'Brandon Grotesque';
+}
+
+/* line 17, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.maincontainer {
+  min-width: 960px;
+  background-color: #020204;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 25, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.maindiv {
+  background-color: #123;
+  background-image: url("background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100%;
+}
+
+/* line 36, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.results {
+  padding-top: 30px;
+  width: 650px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 44, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.bus-name {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+/* line 51, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+}
+
+/* line 60, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues {
+  min-height: 220px;
+  border-bottom: 1px solid #b5b5b5;
+  padding-top: 42px;
+  padding-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #505151;
+  width: 675px;
+  margin: 0 auto;
+  line-height: 1.55em;
+}
+/* line 70, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues:hover {
+  background-color: #ffffff;
+}
+
+/* line 75, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues a {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 80, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues a:hover {
+  background-color: #d3d3d3;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 87, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues li:last-child {
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  top: 30px;
+}
+
+/* line 96, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues li:nth-child(3) {
+  width: 300px;
+}
+
+/* line 101, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues:first-child {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+/* line 106, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venues:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+/* line 112, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.phone {
+  margin-top: -10px;
+}
+
+/* line 116, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.image img {
+  width: 125px;
+  margin: 0 20px 0 10px;
+  border: 10px solid #fff;
+  box-shadow: 1px 1px 10px #000;
+  border-radius: 6px;
+}
+
+/* line 124, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.venue-check {
+  display: inline-block;
+  position: relative;
+  top: 45px;
+}
+
+/* line 132, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+  padding: 0;
+  display: block;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 149, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.createtrip-venues {
+  background: linear-gradient(to left, #0A5673, #513783);
+  border-radius: 10px;
+  letter-spacing: .15em;
+  color: gray;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 164, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.createtrip-venues:hover {
+  color: #ffffff;
+  background: linear-gradient(to left, #513783, #0A5673);
+  text-decoration: none;
+}
+
+/* line 178, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.trip-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 30px 15px;
+  margin-left: 104px;
+}
+
+/* line 188, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.savetrip {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 676px;
+  padding: 10px 10px 40px 10px;
+  position: relative;
+  left: 13px;
+  margin: 0 auto;
+  color: #5F5F5F;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 202, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.field-dates {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+/* line 210, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.field-title {
+  display: block;
+  width: 300px;
+  font-size: 1.5em;
+  float: right;
+}
+
+/* line 218, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.title-venues {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 170px;
+  outline: none;
+}
+
+/* line 225, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.startTime {
+  padding-bottom: 10px;
+}
+
+/* line 229, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/venues.scss */
+.endTime {
+  padding-bottom: 10px;
+}
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+* files in this directory. Styles in this file should be added after the last require_* statement.
+* It is generally better to create a new file per style scope.
+*
+
+
+*/
+
+
+
+
+
+
+
+ @font-face{
+   font-family:'Brandon Grotesque';
+   src: url("/fonts/Brandon Grotesque/Brandon Grotesque Regular.otf") format("opentype");
+   font-weight:normal;font-style:normal;
+ }
+
+ @font-face{
+   font-family:'Brandon Grotesque Bold';
+   src:url("/fonts/Brandon Grotesque/Brandon Grotesque Bold.otf") format("opentype");
+   font-weight:bold;font-style:normal;
+ }
