@@ -317,7 +317,6 @@ body {
 /* line 17, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/trips.scss */
 .mainTrips {
   background-color: #123;
-  background-image: url("background7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -520,7 +519,6 @@ h1 {
 /* line 74, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
 #logo {
   float: left;
-  background-image: "/images/images/Travelize_Logo.png";
   background-size: contain;
   background-repeat: no-repeat;
   width: 90px;
@@ -572,7 +570,7 @@ h1 {
 .main {
   background-color: #123;
   max-height: 671px;
-  background-image: url("background2.jpg");
+  /*background-image: url("background2.jpg");*/
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -585,7 +583,7 @@ h1 {
 
 /* line 131, /Users/ErickHernandez/Desktop/wyncode/travelize/app/assets/stylesheets/userProfile.scss */
 .main2 {
-  background-image: url("background4.jpg");
+  /*background-image: url("background4.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
